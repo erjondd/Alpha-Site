@@ -1,0 +1,8 @@
+<svg id="Component_3_3" data-name="Component 3 – 3" xmlns="http://www.w3.org/2000/svg" width="480" height="197" viewBox="0 0 480 197">
+  <rect id="Rectangle_17" data-name="Rectangle 17" width="480" height="197" fill="#fff" opacity="0"/>
+  <text id="BATIMENT" transform="translate(88 122)" fill="#fff" font-size="58" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">BATIMENT</tspan></text>
+  <g id="Group_55" data-name="Group 55" transform="translate(-619.808 1005.809) rotate(-90)">
+    <path id="Path_31" data-name="Path 31" d="M20.06,27.881H9.829L5.209,14.774l-.09-.257-.032-.087L0,0H10.234l4.71,13.368Z" transform="translate(910.927 1015.745) rotate(-90)" fill="#fff"/>
+    <path id="Path_32" data-name="Path 32" d="M20.092,0,14.976,14.516v0L10.263,27.881l-.029.087H0l.032-.087,5.087-14.43.029-.087L9.858,0Z" transform="translate(882.958 1015.745) rotate(-90)" fill="#fff"/>
+  </g>
+</svg>
