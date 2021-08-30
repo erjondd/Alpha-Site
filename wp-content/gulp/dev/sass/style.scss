@@ -64,6 +64,14 @@ a:hover {
   .menu-icon {
   }
 }
+.menu-open-white{
+  cursor:pointer;
+}
+
+.menu-open-black{
+  cursor:pointer;
+}
+
 .menu-content {
   position: fixed;
   width: 100%;
@@ -610,6 +618,8 @@ a:hover {
 }
 .all-slider-top-pic img {
   height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 .all-slider-top-info {
   flex: 0 0 calc(50% - 90px);
