@@ -3,20 +3,37 @@
 get_header();
 
 /*
-Template Name: Valuers Edification
+Template Name: Valeurs Edification
 */
 
 ?>
 
+
+<?php  
+
+$valeur_left_bold_text = get_field("valeur_left_bold_text");
+$valeurs_left_normal_text = get_field("valeurs_left_normal_text");
+$valeurs_box_1 = get_field("valeurs_box_1");
+$valeurs_box_2 = get_field("valeurs_box_2");
+$valeurs_box_3 = get_field("valeurs_box_3");
+$valeurs_box_4 = get_field("valeurs_box_4");
+$valeurs_slider_text_1 = get_field("valeurs_slider_text_1");
+$valeurs_slider_text_2 = get_field("valeurs_slider_text_2");
+$valeurs_slider_text_3 = get_field("valeurs_slider_text_3");
+$valeurs_main_tittle_1 = get_field("valeurs_main_tittle_1");
+$valeurs_main_tittle_2 = get_field("valeurs_main_tittle_2");
+$valeurs_main_tittle_3 = get_field("valeurs_main_tittle_3");
+
+?>
 <div class="page page-enterprise enterprise-vision" current="vision">
   <div class="page-header">
     <div class="page-header-background"></div>
     <div class="page-header-content">
       <h1>
-        Valuers <br />
-        <span class="vision">Vision</span>
-        <span class="moyens">Moyens</span>
-        <span class="mission">Mission</span>
+        Valeurs <br />
+        <span class="vision"><?= $valeurs_main_tittle_1 ?></span>
+        <span class="moyens"><?= $valeurs_main_tittle_2 ?></span>
+        <span class="mission"><?= $valeurs_main_tittle_3 ?></span>
       </h1>
 
     </div>
@@ -26,37 +43,31 @@ Template Name: Valuers Edification
       <div class="page-content-info-main">
         <img src="<?= get_template_directory_uri() ?>/images/no_vals.svg">
         <p class="info-main-bold">
-          Notre savoir faire et notre savoir être<br />
-          sont au service de nos clients.
+        <?= $valeur_left_bold_text ?>
         </p>
         <p class="info-main-normal">
-          Nous souhaitons tisser des liens<br />
-          durables avec nos partenaires et<br />
-          assurer notre succès sur la base de<br />
-          valeurs essentielles:
+          <?= $valeurs_left_normal_text ?>
         </p>
       </div>
       <div class="page-content-info-boxes">
         <div class="info-box box1">
           <div class="text-box">
-            Respecter les individus<br />
-            et l’environnement.
+            <?= $valeurs_box_1 ?>
           </div>
         </div>
 
         <div class="info-box box2">
           <div class="text-box">
-            Ecouter attentivement<br />
-            les besoins de nos clients.
+          <?= $valeurs_box_2 ?>
           </div>
         </div>
 
         <div class="info-box box3">
-          <div class="text-box">Trouver des solutions adaptées.</div>
+          <div class="text-box"><?= $valeurs_box_3 ?></div>
         </div>
 
         <div class="info-box box4">
-          <div class="text-box">Tenir nos engagements.</div>
+          <div class="text-box"><?= $valeurs_box_4 ?></div>
         </div>
       </div>
     </div>
@@ -65,12 +76,9 @@ Template Name: Valuers Edification
         <img src="<?= get_template_directory_uri() ?>/images/arrow-up.svg" alt="arrow up" />
       </div>
       <div class="content-slider-info">
-        <span class="vision">Nous voulons participer activement au développement et au
-          rayonnement de Genève auxquels nous croyons pleinement. Notre
-          démarche s’inscrit dans la durée.</span>
-        <span class="moyens">Notre but est d’assurer la pérennité
-          d’Alpha Edification SA grâce à la rentabilité de notre travail, la satisfaction et la fidélisation de nos clients et de nos collaborateurs.</span>
-        <span class="mission">Nous sommes convaincus qu’une approche rigoureuse et méthodique du volet opérationnel est le meilleur moyen d’atteindre nos objectifs.</span>
+        <span class="vision"><?= $valeurs_slider_text_1 ?></span>
+        <span class="moyens"><?= $valeurs_slider_text_2 ?></span>
+        <span class="mission"><?= $valeurs_slider_text_3 ?></span>
       </div>
       <div class="svg-down valuers-arrow-down">
         <img src="<?= get_template_directory_uri() ?>/images/arrow-down.svg" alt="arrow up" />
