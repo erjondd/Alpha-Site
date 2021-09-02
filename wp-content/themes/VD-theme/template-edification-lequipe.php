@@ -8,12 +8,16 @@ Template Name: Edification L'equipe
 
 ?>
 
-<div class="page page-lequipe">
+<div class="page page-lequipe lequipe-alexandre" current="alexandre">
     <div class="page-header">
         <div class="page-header-background"></div>
         <div class="page-header-content">
             <h1>L'equipe <br>
-                Alexandre Adami</h1>
+            <span class="alexandre">Alexandre Adami</span>
+            <span class="hugo">Hugo Haro</span>
+            <span class="nadine">Nadine Haro</span>
+            <span class="alone">alone</span>
+    </h1>
 
 
         </div>
@@ -21,7 +25,7 @@ Template Name: Edification L'equipe
     <div class="page-content">
         <div class="lequipe-informations">
             <div class="main-info">
-                <img src="<?= get_template_directory_uri() ?>/images/qui-sommes-nous.svg" alt="qui sommes nous">
+               <div class="main-lequipe-tittleque">QUI SOMMES<br/>NOUS?</div>
             </div>
             <div class="seconday-main-info">
                 <div class="seconday-main-info-left">Nous développons notre activité dans les secteurs
@@ -36,9 +40,22 @@ Template Name: Edification L'equipe
             </div>
         </div>
         <div class="lequipe-all-slider">
+            <img class="lequipe-slider-picture" src="<?= get_template_directory_uri() ?>/images/lequipe-slider-picture.jpg" alt="">
             <div class="lequipe-all-slider-top">
-                <div class="all-slider-top-pic"><img src="<?= get_template_directory_uri() ?>/images/person-1.jpg" alt="Alexandri"></div>
+                <div class="all-slider-top-pic">
+                <span class="alexandre"><img src="<?= get_template_directory_uri() ?>/images/person-1.jpg" alt="Alexandri"></span>
+            <span class="hugo"><img src="<?= get_template_directory_uri() ?>/images/person-2.jpg" alt="Alexandri"></span>
+            <span class="nadine">Nadine Haro</span>
+            <span class="alone">alone</span>
+                    
+                </div>
                 <div class="all-slider-top-info">
+                    <div class="lequipe-edification-dotts">
+                    <div class="dott dott1" dotname="alexandre"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
+                    <div class="dott dott2" dotname="hugo"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
+                    <div class="dott dott3" dotname="nadine"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
+                    <div class="dott dott4" dotname="alone"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
+                </div>
                     <div class="all-slider-top-info-tittle">Responsable</div>
                     <div class="Submain1 Picture">Secteur Génie Civil</div>
                     <img src="<?= get_template_directory_uri() ?>/images/conducter.svg" alt="Conducter">

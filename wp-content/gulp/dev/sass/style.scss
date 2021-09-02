@@ -15,7 +15,7 @@
   font-family: "poppins-bold";
   src: url("../fonts/Poppins-Bold.ttf");
 }
-@font-face{
+@font-face {
   font-family: "tuskergrotesk-semibold";
   src: url("../fonts/TuskerGrotesk-6600Semibold.otf");
 }
@@ -68,12 +68,12 @@ a:hover {
   .menu-icon {
   }
 }
-.menu-open-white{
-  cursor:pointer;
+.menu-open-white {
+  cursor: pointer;
 }
 
-.menu-open-black{
-  cursor:pointer;
+.menu-open-black {
+  cursor: pointer;
 }
 
 .menu-content {
@@ -182,10 +182,12 @@ a:hover {
   display: inline-block;
   color: #fff;
   position: relative;
-  font-size: calc(16vh - 20px);
+  font-size: calc(16vh + 1vw);
   margin: 0;
   padding: 0;
   margin-left: 2vw;
+  line-height: 1.2;
+  margin-top: 2vh;
 }
 
 // .page-header img {
@@ -216,7 +218,7 @@ a:hover {
   display: flex;
 }
 .page-content-info-main {
-  flex: 0 0 50% ;
+  flex: 0 0 50%;
   background: white;
   padding: 4vh 4vw;
   // padding: calc(0.5vh + 2vw);
@@ -231,27 +233,27 @@ a:hover {
   font-family: "poppins-bold";
 }
 .page-content-slider {
-  flex: 0 0 50% ;
+  flex: 0 0 50%;
   /* height: 100%; */
   /* position: relative; */
   /* top: 40%; */
   padding: 4vh 4vw;
-  font-size:calc(1vh + 0.5vw);
+  font-size: calc(1vh + 0.5vw);
   display: flex;
   color: #ffffff;
   text-align: center;
   font-family: "poppins-bold";
   flex-direction: column;
   /* align-items: center; */
- 
+
   justify-content: center;
 }
-.valuers-arrow-up img{
-  width:4vw;
+.valuers-arrow-up img {
+  width: 4vw;
   cursor: pointer;
 }
-.valuers-arrow-down img{
-  width:4vw;
+.valuers-arrow-down img {
+  width: 4vw;
   cursor: pointer;
 }
 .info-box.box1 {
@@ -282,18 +284,18 @@ a:hover {
 .info-main-bold {
   font-family: "poppins-bold";
   margin: 15px 0;
-  font-size:calc(1vh + 0.5vw);
+  font-size: calc(1vh + 0.5vw);
 }
 .info-main-normal {
   font-family: "poppins-regular";
   margin: 0;
-  font-size:calc(1vh + 0.5vw);
+  font-size: calc(1vh + 0.5vw);
 }
 .content-slider-info {
-    margin: 0;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 /*Menu CSS */
@@ -308,12 +310,14 @@ a:hover {
 
 .menu {
   margin: 0;
-  padding: 4vh 10vw 0 2vw;
+  // padding: 4vh 10vw 0 2vw;
   list-style: none;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
+  font-family: "tuskergrotesk-semibold";
+  padding: 4vh 10vw 4vh 2vw;
 }
 .menu-links {
   position: absolute;
@@ -363,9 +367,10 @@ a:hover {
 }
 .menu > li > a {
   color: #fff;
-  font-size: calc(4vh + 7.5vw);
+  // font-size: calc(4vh + 7.5vw);
   position: relative;
   transition: all 0.6s ease-out;
+  font-size: calc(9vh + 4.5vw);
 }
 .menu > li {
   height: 25%;
@@ -423,7 +428,6 @@ a:hover {
 .prestations-all-boxes {
   height: 100%;
   flex: 0 0 50%;
-  
 }
 .prestations-info-left {
   flex: 0 0 calc(50% - 6vw);
@@ -431,7 +435,7 @@ a:hover {
 }
 .prestations-info-right {
   flex: 0 0 calc(50% - 6vw);
-    padding: 6vh 4vw 4vh 2vw;
+  padding: 6vh 4vw 4vh 2vw;
 }
 .prestations-info-tittle {
   font-family: "tusker-semibold";
@@ -542,10 +546,9 @@ a:hover {
   font-family: "poppins-regular";
 }
 
-.page-references .page-header-background::after
-{
+.page-references .page-header-background::after {
   background-image: url(../images/references-header-pic.jpg);
-  background-size:cover;
+  background-size: cover;
 }
 /* Contact CSS*/
 .page-contact-edification .page-header-background::after {
@@ -574,11 +577,10 @@ a:hover {
 }
 .contact-edification-top {
   text-transform: uppercase;
-    flex-grow: 1;
-    font-size: calc(4vh + 2vw);
-    padding-bottom: 4vh;
-    font-family: "tuskergrotesk-semibold";
-    
+  flex-grow: 1;
+  font-size: calc(4vh + 2vw);
+  padding-bottom: 4vh;
+  font-family: "tuskergrotesk-semibold";
 }
 .contact-edification-bottom {
   height: 50%;
@@ -592,7 +594,6 @@ a:hover {
 .contact-edification-bottom-right {
   flex: 0 0 50%;
   margin: 0;
-  
 }
 .submain-tittle-contact-edification {
   font-family: "poppins-regular";
@@ -634,6 +635,29 @@ a:hover {
 }
 
 /* Lequipe CSS */
+.lequipe-edification-dotts {
+  right: 2vw;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: calc(0.5vh + 1vw);
+  padding: 2vh 0;
+  display: flex;
+  flex-direction: column;
+}
+.dott {
+  opacity: 0.33;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+}
+.dott:hover {
+  opacity: 1;
+}
+.page-lequipe .page-header-background::after {
+  background-image: url(../images/lequipe-edification.png);
+  background-size: cover;
+}
 .lequipe-informations {
   flex: 0 0 50%;
   background: #ffffff;
@@ -642,21 +666,20 @@ a:hover {
 }
 .lequipe-all-slider {
   flex: 0 0 50%;
-  font-size:calc(1vh + 0.5vw);
+  font-size: calc(1vh + 0.5vw);
+  position:relative;
 }
 .seconday-main-info {
   display: flex;
   height: 100%;
-  margin:0;
+  margin: 0;
 }
 .seconday-main-info-left {
   flex: 0 0 calc(50% - 4vw);
-    margin-right: 4vw;
- 
+  margin-right: 4vw;
 }
 .seconday-main-info-right {
   flex: 0 0 50%;
-  
 }
 .lequipe-all-slider-top {
   display: flex;
@@ -664,6 +687,10 @@ a:hover {
 }
 .all-slider-top-pic {
   flex: 0 0 50%;
+  height: 100%;
+}
+.all-slider-top-pic span {
+  height: 100%;
 }
 .all-slider-top-pic img {
   height: 100%;
@@ -676,6 +703,7 @@ a:hover {
   color: #fff;
   /* padding: 45px 30px; */
   padding: 2vh 2vw;
+  position: relative;
 }
 .main-info img {
   width: 30vw;
@@ -700,15 +728,15 @@ a:hover {
 .lequipe-slider-bottom-left {
   padding-right: 2vw;
 }
-.lequipe-slider-bottom-center{
+.lequipe-slider-bottom-center {
   padding-right: 2vw;
 }
 .lequipe-slider-bottom-right {
-  
 }
 .lequope-all-slider-full-bottom {
   height: 100%;
   padding: 4vh 2vw;
+  font-size: calc(0.7vh + 0.35vw);
 }
 .lequipe-left-center-right-infos {
   height: 100%;
@@ -783,71 +811,139 @@ a:hover {
   display: none;
 }
 
-
 //slider valuers animations
-.page-enterprise{
+.page-enterprise {
   .vision,
   .moyens,
-  .mission{
-    display:none;
+  .mission {
+    display: none;
   }
-    
-  &.enterprise-vision{
-    .vision{
-      display:block;
+
+  &.enterprise-vision {
+    .vision {
+      display: block;
     }
-    .page-header-background::after{
-      background-position-y:0%;
-    }
-  }
-  &.enterprise-moyens{
-    .moyens{
-      display:block
-    }
-    .page-header-background::after{
-      background-position-y:50%;
+    .page-header-background::after {
+      background-position-y: 0%;
     }
   }
-  &.enterprise-mission{
-    .mission{
-      display:block
+  &.enterprise-moyens {
+    .moyens {
+      display: block;
     }
-    .page-header-background::after{
-      background-position-y:100%;
+    .page-header-background::after {
+      background-position-y: 50%;
+    }
+  }
+  &.enterprise-mission {
+    .mission {
+      display: block;
+    }
+    .page-header-background::after {
+      background-position-y: 100%;
     }
   }
 }
 
 //slider prestations
-.page-prestations{
+.page-prestations {
   .genie_civil,
   .batiment,
-  .artisans_macon{
-    display:none;
-    
+  .artisans_macon {
+    display: none;
   }
-    
-  &.prestation-genie_civil{
-    .genie_civil{
-      display:block;
-     
+
+  &.prestation-genie_civil {
+    .genie_civil {
+      display: block;
     }
   }
-  &.prestation-batiment{
-    .batiment{
-      display:block
+  &.prestation-batiment {
+    .batiment {
+      display: block;
     }
   }
-  &.prestation-artisans_macon{
-    .artisans_macon{
-      display:block
+  &.prestation-artisans_macon {
+    .artisans_macon {
+      display: block;
     }
   }
 }
-.box-slide-click img{
-  height:100%;
+.box-slide-click img {
+  height: 100%;
 }
-.box-slide-click:hover{
-  opacity:0.7;
-  cursor:pointer;
+.box-slide-click:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+//lequipe-slider
+.page-lequipe {
+  .alexandre,
+  .hugo,
+  .nadine,
+  .alone {
+    display: none;
+  }
+
+  &.lequipe-alexandre {
+    .alexandre {
+      display: block;
+    }
+  }
+  &.lequipe-hugo {
+    .hugo {
+      display: block;
+    }
+  }
+  &.lequipe-nadine {
+    .nadine {
+      display: block;
+    }
+  }
+  &.lequipe-alone {
+    .alone {
+      display: none;
+    }
+    .page-header h1 {
+    font-size: calc(16vh + 1vw);
+   
+    }
+    .lequipe-all-slider * {
+      background-color: transparent;
+    }
+    .lequipe-edification-dotts *{
+      z-index:2;
+    }
+    .lequipe-slider-picture{
+      opacity:1;
+      z-index:1;
+      background-color:black;
+    }
+  }
+  .lequipe-slider-picture{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    top:0;
+    pointer-events: none;
+    object-position: center;
+    background-color: black;
+    opacity: 0;
+  }
+}
+.main-lequipe-tittleque {
+  font-family: tuskergrotesk-semibold;
+  font-size: calc(5.2vh + 2.6vw);
+  color: #000;
+  line-height: calc(6vh + 3vw);
+}
+.main-lequipe-tittleque::after{
+  content: "";
+  height: 2vh;
+  width: 40%;
+  background: #000;
+  display: block;
+  margin: 3vh 0 4vh;
 }
