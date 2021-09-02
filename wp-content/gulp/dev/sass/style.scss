@@ -16,8 +16,8 @@
   src: url("../fonts/Poppins-Bold.ttf");
 }
 @font-face{
-  font-family: "tuskergrotesk-6600semibold"
-  src: url("../fonts/TuskerGrotesk-6600Semibold.otf")
+  font-family: "tuskergrotesk-semibold";
+  src: url("../fonts/TuskerGrotesk-6600Semibold.otf");
 }
 
 html {
@@ -185,7 +185,7 @@ a:hover {
   font-size: calc(16vh - 20px);
   margin: 0;
   padding: 0;
-  margin-left: 30px;
+  margin-left: 2vw;
 }
 
 // .page-header img {
@@ -202,6 +202,7 @@ a:hover {
   align-items: center;
   position: relative;
   z-index: 1;
+  font-family: "tuskergrotesk-semibold";
   img {
     height: 100%;
     margin: 0;
@@ -218,12 +219,15 @@ a:hover {
   flex: 0 0 50% ;
   background: white;
   padding: 4vh 4vw;
+  // padding: calc(0.5vh + 2vw);
+  font-size: calc(1vh + 0.5vw);
 }
 .page-content-info-main img {
   height: calc(30vh - 50px);
 }
 .page-content-info-boxes {
   flex: 0 0 50%;
+  font-size: calc(1vh + 0.5vw);
   font-family: "poppins-bold";
 }
 .page-content-slider {
@@ -231,14 +235,24 @@ a:hover {
   /* height: 100%; */
   /* position: relative; */
   /* top: 40%; */
+  padding: 4vh 4vw;
+  font-size:calc(1vh + 0.5vw);
   display: flex;
   color: #ffffff;
   text-align: center;
   font-family: "poppins-bold";
   flex-direction: column;
   /* align-items: center; */
-  padding: 50px;
+ 
   justify-content: center;
+}
+.valuers-arrow-up img{
+  width:4vw;
+  cursor: pointer;
+}
+.valuers-arrow-down img{
+  width:4vw;
+  cursor: pointer;
 }
 .info-box.box1 {
   background: #363636;
@@ -261,19 +275,19 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding: 0vh 3vw;
   color: #ffffff;
 }
 
 .info-main-bold {
   font-family: "poppins-bold";
   margin: 15px 0;
-  font-size: 2vh;
+  font-size:calc(1vh + 0.5vw);
 }
 .info-main-normal {
   font-family: "poppins-regular";
   margin: 0;
-  font-size: 2vh;
+  font-size:calc(1vh + 0.5vw);
 }
 .content-slider-info {
     margin: 0;
@@ -409,6 +423,7 @@ a:hover {
 .prestations-all-boxes {
   height: 100%;
   flex: 0 0 50%;
+  
 }
 .prestations-info-left {
   flex: 0 0 calc(50% - 6vw);
@@ -441,6 +456,7 @@ a:hover {
 .prestations-boxes-left {
   font-family: "poppins-bold";
   flex: 0 0 50%;
+  font-size: calc(1vh + 0.5vw);
 }
 .prestations-boxes-right {
   flex: 0 0 50%;
@@ -452,9 +468,10 @@ a:hover {
 .prestations-box2-right {
   height: 33.33%;
   color: white;
-  padding: 0 50px;
+  padding: 0vh 3vw;
   align-items: center;
   display: flex;
+  font-size: calc(1vh + 0.5vw);
   justify-content: center;
 }
 .prestations-box1-left {
@@ -482,7 +499,8 @@ a:hover {
   color: white;
 }
 .page-prestations .page-header-background::after {
-  background-image: url(../images/prestations-pic.jpg);
+  // background-image: url(../images/prestations-pic.jpg);
+  background-image: url(../images/prestation-geniecivil.jpg);
 }
 
 /*references css*/
@@ -490,29 +508,45 @@ a:hover {
   flex: 0 0 60%;
   height: 100%;
   display: flex;
-  background: #ffffff;
+  background: #fff;
+  padding: 5vw 10vh;
+  font-size: calc(1vh + 0.5vw);
 }
 .references-picture {
   flex: 0 0 40%;
   height: 100%;
 }
+.references-picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .references-info-left {
-  flex: 0 0 calc(50% - 140px);
-  padding: 70px;
+  flex: 0 0 50%;
+  /* padding: 70px; */
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  padding-right: 8vh;
 }
 .references-info-right {
-  flex: 0 0 calc(50% - 140px);
-  padding: 70px;
+  flex: 0 0 50%;
 }
 .references-info-tittle {
   text-transform: uppercase;
-  font-family: "tusker-semibold";
+  font-family: "tuskergrotesk-semibold";
+  padding-bottom: 1vh;
 }
 .references-info-subtittle {
   padding-bottom: 50px;
   font-family: "poppins-regular";
 }
 
+.page-references .page-header-background::after
+{
+  background-image: url(../images/references-header-pic.jpg);
+  background-size:cover;
+}
 /* Contact CSS*/
 .page-contact-edification .page-header-background::after {
   background-image: url(../images/contact-edification.jpg);
@@ -543,6 +577,7 @@ a:hover {
     flex-grow: 1;
     font-size: calc(4vh + 2vw);
     padding-bottom: 4vh;
+    font-family: "tuskergrotesk-semibold";
     
 }
 .contact-edification-bottom {
@@ -550,17 +585,22 @@ a:hover {
   display: flex;
 }
 .contact-edification-bottom-left {
-  flex: 0 0 calc(50% - 8vw);
+  flex: 0 0 calc(50% - 4vw);
   margin-right: 4vw;
 }
 
 .contact-edification-bottom-right {
-  flex: 0 0 calc(50% - 8vw);
+  flex: 0 0 50%;
+  margin: 0;
   
+}
+.submain-tittle-contact-edification {
+  font-family: "poppins-regular";
 }
 .main-tittle-contact-edification {
   padding-bottom: 3vh;
   font-size: 4vh;
+  font-family: "tuskergrotesk-semibold";
 }
 
 .contact-info-blackbox {
@@ -597,21 +637,26 @@ a:hover {
 .lequipe-informations {
   flex: 0 0 50%;
   background: #ffffff;
+  font-size: calc(1vh + 0.5vw);
+  padding: 2vh 2vw;
 }
 .lequipe-all-slider {
   flex: 0 0 50%;
+  font-size:calc(1vh + 0.5vw);
 }
 .seconday-main-info {
   display: flex;
   height: 100%;
+  margin:0;
 }
 .seconday-main-info-left {
-  flex: 0 0 calc(50% - 100px);
-  padding: 0 50px;
+  flex: 0 0 calc(50% - 4vw);
+    margin-right: 4vw;
+ 
 }
 .seconday-main-info-right {
-  flex: 0 0 calc(50% - 100px);
-  padding: 0 50px;
+  flex: 0 0 50%;
+  
 }
 .lequipe-all-slider-top {
   display: flex;
@@ -623,19 +668,21 @@ a:hover {
 .all-slider-top-pic img {
   height: 100%;
   object-fit: cover;
+  width: 100%;
   object-position: top;
 }
 .all-slider-top-info {
-  flex: 0 0 calc(50% - 90px);
-  color: #ffffff;
-  padding: 45px 30px;
+  flex: 0 0 50%;
+  color: #fff;
+  /* padding: 45px 30px; */
+  padding: 2vh 2vw;
 }
 .main-info img {
   width: 30vw;
   height: 30vh;
 }
 .main-info {
-  padding: 20px 50px;
+  padding-bottom: 2vh;
 }
 .all-slider-top-info-tittle {
   font-family: "poppins-bold";
@@ -651,10 +698,21 @@ a:hover {
   font-family: "poppins-regular";
 }
 .lequipe-slider-bottom-left {
-  flex: 0 0 40%;
+  padding-right: 2vw;
+}
+.lequipe-slider-bottom-center{
+  padding-right: 2vw;
 }
 .lequipe-slider-bottom-right {
-  flex: 0 0 40%;
+  
+}
+.lequope-all-slider-full-bottom {
+  height: 100%;
+  padding: 4vh 2vw;
+}
+.lequipe-left-center-right-infos {
+  height: 100%;
+  display: flex;
 }
 
 //homepage
@@ -758,4 +816,38 @@ a:hover {
       background-position-y:100%;
     }
   }
+}
+
+//slider prestations
+.page-prestations{
+  .genie_civil,
+  .batiment,
+  .artisans_macon{
+    display:none;
+    
+  }
+    
+  &.prestation-genie_civil{
+    .genie_civil{
+      display:block;
+     
+    }
+  }
+  &.prestation-batiment{
+    .batiment{
+      display:block
+    }
+  }
+  &.prestation-artisans_macon{
+    .artisans_macon{
+      display:block
+    }
+  }
+}
+.box-slide-click img{
+  height:100%;
+}
+.box-slide-click:hover{
+  opacity:0.7;
+  cursor:pointer;
 }

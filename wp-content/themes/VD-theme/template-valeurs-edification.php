@@ -17,12 +17,12 @@ $valeurs_box_1 = get_field("valeurs_box_1");
 $valeurs_box_2 = get_field("valeurs_box_2");
 $valeurs_box_3 = get_field("valeurs_box_3");
 $valeurs_box_4 = get_field("valeurs_box_4");
-$valeurs_slider_text_1 = get_field("valeurs_slider_text_1");
-$valeurs_slider_text_2 = get_field("valeurs_slider_text_2");
-$valeurs_slider_text_3 = get_field("valeurs_slider_text_3");
-$valeurs_main_tittle_1 = get_field("valeurs_main_tittle_1");
-$valeurs_main_tittle_2 = get_field("valeurs_main_tittle_2");
-$valeurs_main_tittle_3 = get_field("valeurs_main_tittle_3");
+$valeurs_slider_1 = get_field("valeurs_slider_1");
+$valeurs_slider_2 = get_field("valeurs_slider_2");
+$valeurs_slider_3 = get_field("valeurs_slider_3");
+$valeurs_submain_tittle_1 = get_field("valeurs_submain_tittle_1");
+$valeurs_submain_tittle_2 = get_field("valeurs_submain_tittle_2");
+$valeurs_submain_tittle_3 = get_field("valeurs_submain_tittle_3");
 
 ?>
 <div class="page page-enterprise enterprise-vision" current="vision">
@@ -31,9 +31,9 @@ $valeurs_main_tittle_3 = get_field("valeurs_main_tittle_3");
     <div class="page-header-content">
       <h1>
         Valeurs <br />
-        <span class="vision"><?= $valeurs_main_tittle_1 ?></span>
-        <span class="moyens"><?= $valeurs_main_tittle_2 ?></span>
-        <span class="mission"><?= $valeurs_main_tittle_3 ?></span>
+        <span class="vision"><?= $valeurs_submain_tittle_1 ?></span>
+        <span class="moyens"><?= $valeurs_submain_tittle_2 ?></span>
+        <span class="mission"><?= $valeurs_submain_tittle_3 ?></span>
       </h1>
 
     </div>
@@ -76,9 +76,9 @@ $valeurs_main_tittle_3 = get_field("valeurs_main_tittle_3");
         <img src="<?= get_template_directory_uri() ?>/images/arrow-up.svg" alt="arrow up" />
       </div>
       <div class="content-slider-info">
-        <span class="vision"><?= $valeurs_slider_text_1 ?></span>
-        <span class="moyens"><?= $valeurs_slider_text_2 ?></span>
-        <span class="mission"><?= $valeurs_slider_text_3 ?></span>
+        <span class="vision"><?= $valeurs_slider_1 ?></span>
+        <span class="moyens"><?= $valeurs_slider_2 ?></span>
+        <span class="mission"><?= $valeurs_slider_3 ?></span>
       </div>
       <div class="svg-down valuers-arrow-down">
         <img src="<?= get_template_directory_uri() ?>/images/arrow-down.svg" alt="arrow up" />
