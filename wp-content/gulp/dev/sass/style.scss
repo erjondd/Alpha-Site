@@ -157,6 +157,7 @@ a:hover {
   height: 100%;
   background-image: url(../images/valuers-background.jpg);
   background-position-y: 50%;
+  background-size: 150%;
   transition: all 1s;
 }
 
@@ -182,12 +183,10 @@ a:hover {
   display: inline-block;
   color: #fff;
   position: relative;
-  font-size: calc(16vh + 1vw);
+  font-size: calc(5vh + 5vw);
   margin: 0;
   padding: 0;
-  margin-left: 2vw;
-  line-height: 1.2;
-  margin-top: 2vh;
+  line-height: 1.1;
 }
 
 // .page-header img {
@@ -199,7 +198,7 @@ a:hover {
 // }
 .page-header-content {
   height: 100%;
-  padding: 4vh 2vw;
+  padding: 4vh 2vw 0;
   display: flex;
   align-items: center;
   position: relative;
@@ -209,6 +208,7 @@ a:hover {
     height: 100%;
     margin: 0;
     display: block;
+    padding-bottom: 4vh;
   }
 }
 
@@ -222,14 +222,14 @@ a:hover {
   background: white;
   padding: 4vh 4vw;
   // padding: calc(0.5vh + 2vw);
-  font-size: calc(1vh + 0.5vw);
+  font-size: calc(0.5vh + 0.8vw);
 }
 .page-content-info-main img {
   height: calc(30vh - 50px);
 }
 .page-content-info-boxes {
   flex: 0 0 50%;
-  font-size: calc(1vh + 0.5vw);
+  font-size: calc(0.5vh + 0.8vw);
   font-family: "poppins-bold";
 }
 .page-content-slider {
@@ -238,7 +238,7 @@ a:hover {
   /* position: relative; */
   /* top: 40%; */
   padding: 4vh 4vw;
-  font-size: calc(1vh + 0.5vw);
+  font-size: calc(0.5vh + 0.8vw);
   display: flex;
   color: #ffffff;
   text-align: center;
@@ -284,12 +284,12 @@ a:hover {
 .info-main-bold {
   font-family: "poppins-bold";
   margin: 15px 0;
-  font-size: calc(1vh + 0.5vw);
+  font-size: calc(0.5vh + 0.8vw);
 }
 .info-main-normal {
   font-family: "poppins-regular";
   margin: 0;
-  font-size: calc(1vh + 0.5vw);
+  font-size: calc(0.5vh + 0.8vw);
 }
 .content-slider-info {
   margin: 0;
@@ -420,10 +420,42 @@ a:hover {
 
 /*prestation css*/
 .prestations-info {
+  position: relative;
   height: 100%;
   flex: 0 0 50%;
-  background: white;
+  background: #fff;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: calc(2vh + 4vw);
+  cursor: pointer;
+  &:hover {
+    background: #f9f9ff;
+    .prestations-video {
+      opacity: 0.1;
+    }
+  }
+  .prestations-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.01;
+    background-color: #000;
+  }
+  .prestations-video-play-icon {
+    width: calc(4vh + 4vw);
+    height: calc(2vh + 4vw);
+  }
+  .prestations-video-label {
+    font-family: tuskergrotesk-semibold;
+    font-size: calc(2vh + 3.8vw);
+    text-transform: uppercase;
+    color: #d0d0d0;
+    margin-top: 2vh;
+  }
 }
 .prestations-all-boxes {
   height: 100%;
@@ -460,7 +492,7 @@ a:hover {
 .prestations-boxes-left {
   font-family: "poppins-bold";
   flex: 0 0 50%;
-  font-size: calc(1vh + 0.5vw);
+  font-size: calc(0.5vh + 0.8vw);
 }
 .prestations-boxes-right {
   flex: 0 0 50%;
@@ -475,7 +507,7 @@ a:hover {
   padding: 0vh 3vw;
   align-items: center;
   display: flex;
-  font-size: calc(1vh + 0.5vw);
+  font-size: calc(0.5vh + 0.8vw);
   justify-content: center;
 }
 .prestations-box1-left {
@@ -514,7 +546,7 @@ a:hover {
   display: flex;
   background: #fff;
   padding: 5vw 10vh;
-  font-size: calc(1vh + 0.5vw);
+  font-size: calc(0.5vh + 0.8vw);
 }
 .references-picture {
   flex: 0 0 40%;
@@ -650,6 +682,11 @@ a:hover {
   cursor: pointer;
   height: 100%;
   display: flex;
+  img {
+    width: calc(1vh + 1vw);
+    height: calc(1vh + 1vw);
+    margin: auto;
+  }
 }
 .dott:hover {
   opacity: 1;
@@ -661,13 +698,13 @@ a:hover {
 .lequipe-informations {
   flex: 0 0 50%;
   background: #ffffff;
-  font-size: calc(1vh + 0.5vw);
-  padding: 2vh 2vw;
+  font-size: calc(0.5vh + 0.8vw);
+  padding: 3vh 2vw;
 }
 .lequipe-all-slider {
   flex: 0 0 50%;
-  font-size: calc(1vh + 0.5vw);
-  position:relative;
+  font-size: calc(0.5vh + 0.8vw);
+  position: relative;
 }
 .seconday-main-info {
   display: flex;
@@ -709,9 +746,6 @@ a:hover {
   width: 30vw;
   height: 30vh;
 }
-.main-info {
-  padding-bottom: 2vh;
-}
 .all-slider-top-info-tittle {
   font-family: "poppins-bold";
 }
@@ -720,23 +754,37 @@ a:hover {
 }
 .lequipe-all-silder-bottom {
   background: #808080;
-  height: 100%;
+  height: 50%;
   color: white;
-  display: flex;
   font-family: "poppins-regular";
 }
 .lequipe-slider-bottom-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding-right: 2vw;
 }
 .lequipe-slider-bottom-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding-right: 2vw;
 }
 .lequipe-slider-bottom-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.lequipe-slider-bottom-experience {
+  margin-bottom: 1vh;
 }
 .lequope-all-slider-full-bottom {
   height: 100%;
   padding: 4vh 2vw;
-  font-size: calc(0.7vh + 0.35vw);
+  font-size: calc(0.4vh + 0.6vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .lequipe-left-center-right-infos {
   height: 100%;
@@ -757,10 +805,30 @@ a:hover {
   flex: 0 0 50%;
 }
 .white-homepage-top {
+  position: relative;
   height: 75%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #35015f;
+    opacity: 0.58;
+  }
 }
 .black-homepage-top {
+  position: relative;
   height: 75%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #35015f;
+    opacity: 0.58;
+  }
 }
 .white-homepage-top img {
   height: 100%;
@@ -785,6 +853,7 @@ a:hover {
   left: 50%;
   top: 37.5%;
   transform: translate(-50%, -50%);
+  z-index: 1;
   img {
     width: 100%;
     object-fit: contain;
@@ -906,27 +975,26 @@ a:hover {
       display: none;
     }
     .page-header h1 {
-    font-size: calc(16vh + 1vw);
-   
+      font-size: calc(5vh + 5vw);
     }
     .lequipe-all-slider * {
       background-color: transparent;
     }
-    .lequipe-edification-dotts *{
-      z-index:2;
+    .lequipe-edification-dotts * {
+      z-index: 2;
     }
-    .lequipe-slider-picture{
-      opacity:1;
-      z-index:1;
-      background-color:black;
+    .lequipe-slider-picture {
+      opacity: 1;
+      z-index: 1;
+      background-color: black;
     }
   }
-  .lequipe-slider-picture{
+  .lequipe-slider-picture {
     position: absolute;
     width: 100%;
     object-fit: cover;
     height: 100%;
-    top:0;
+    top: 0;
     pointer-events: none;
     object-position: center;
     background-color: black;
@@ -935,15 +1003,15 @@ a:hover {
 }
 .main-lequipe-tittleque {
   font-family: tuskergrotesk-semibold;
-  font-size: calc(5.2vh + 2.6vw);
+  font-size: calc(2vh + 4vw);
   color: #000;
-  line-height: calc(6vh + 3vw);
+  line-height: 1.2;
 }
-.main-lequipe-tittleque::after{
+.main-lequipe-tittleque::after {
   content: "";
   height: 2vh;
   width: 40%;
   background: #000;
   display: block;
-  margin: 3vh 0 4vh;
+  margin: 1vh 0 2vh;
 }

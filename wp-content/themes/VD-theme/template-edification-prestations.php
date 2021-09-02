@@ -34,6 +34,11 @@ $edification_prestations_subtittle_3_box_right_1 = get_field("edification_presta
 $edification_prestations_subtittle_3_box_right_2 = get_field("edification_prestations_subtittle_3_box_right_2");
 $edification_prestations_subtittle_3_box_right_3 = get_field("edification_prestations_subtittle_3_box_right_3");
 
+
+$edification_prestations_subtittle_1_video = get_field("edification_prestations_subtittle_1_video");
+$edification_prestations_subtittle_2_video = get_field("edification_prestations_subtittle_2_video");
+$edification_prestations_subtittle_3_video = get_field("edification_prestations_subtittle_3_video");
+
 ?>
 
 
@@ -53,8 +58,9 @@ $edification_prestations_subtittle_3_box_right_3 = get_field("edification_presta
     </div>
     <div class="page-content">
         <div class="prestations-info">
-
-
+            <img class="prestations-video-play-icon" src="<?= get_template_directory_uri() ?>/images/video-play.svg" alt="">
+            <span class="prestations-video-label">vidéo</span>
+            <video class="prestations-video" src="<?= $edification_prestations_subtittle_1_video['url'] ?>"></video>
         </div>
         <div class="prestations-all-boxes">
             <div class="prestations-boxes-left">
