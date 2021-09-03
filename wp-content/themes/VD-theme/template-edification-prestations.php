@@ -93,7 +93,7 @@ $edification_prestations_subtittle_3_video = get_field("edification_prestations_
 
     <script type="text/javascript">
         jQuery(document).ready(function() {
-            jQuery('body').attr('page-color', 'black');
+            jQuery('body').attr('page-color', 'white');
         });
     </script>
     <?php

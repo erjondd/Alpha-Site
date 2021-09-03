@@ -3,7 +3,7 @@
 get_header();
 
 /*
-Template Name: Edification L'equipe
+Template Name: Batiment L'equipe
 */
 
 ?>
@@ -13,10 +13,7 @@ Template Name: Edification L'equipe
         <div class="page-header-background"></div>
         <div class="page-header-content">
             <h1>L'equipe <br>
-            <span class="alexandre">Alexandre Adami</span>
-            <span class="hugo">Hugo Haro</span>
-            <span class="nadine">Nadine Haro</span>
-            <span class="alone">alone</span>
+            Stefan müller
     </h1>
 
 
@@ -43,28 +40,21 @@ Template Name: Edification L'equipe
             <img class="lequipe-slider-picture" src="<?= get_template_directory_uri() ?>/images/lequipe-slider-picture.jpg" alt="">
             <div class="lequipe-all-slider-top">
                 <div class="all-slider-top-pic">
-                <span class="alexandre"><img src="<?= get_template_directory_uri() ?>/images/person-1.jpg" alt="Alexandri"></span>
-            <span class="hugo"><img src="<?= get_template_directory_uri() ?>/images/person-2.jpg" alt="Alexandri"></span>
-            <span class="nadine">Nadine Haro</span>
-            <span class="alone">alone</span>
+                <img src="<?= get_template_directory_uri() ?>/images/batiment-lequipe-person1.jpg" alt="">
+           
                     
                 </div>
-                <div class="all-slider-top-info">
-                    <div class="lequipe-edification-dotts">
-                    <div class="dott dott1" dotname="alexandre"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
-                    <div class="dott dott2" dotname="hugo"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
-                    <div class="dott dott3" dotname="nadine"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
-                    <div class="dott dott4" dotname="alone"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
-                </div>
+                <div class="all-slider-top-info batiment-lequipe">
+                
                     <div class="all-slider-top-info-tittle">Responsable</div>
-                    <div class="Submain1 Picture">Secteur Génie Civil</div>
+                    <div class="Submain1 Picture"><b>Études & Projets</b></div>
                     <img src="<?= get_template_directory_uri() ?>/images/conducter.svg" alt="Conducter">
                     <div class="all-slider-top-info-description">
-                        <b>Né en</b><br/><span class="Submain1 ne en"></span>
-                        <b>Nationalité:</b><br/><span class="Submain1 nationalite"></span>
-                        <b>Domicile:</b><br/><span class="Submain1 domicile"></span> 
-                        <b>Langue:</b><br/><span class="Submain1 langue"></span> 
-                        <b>Formation:</b><br/><span class="Submain1 formation"></span>
+                        <b>Né en</b><span class="Submain1 ne en"><b> 1963 à Genève, Suisse</b></span>
+                        <b>Nationalité:</b><span class="Submain1 nationalite">Française</span><br/>
+                        <b>Domicile:</b><span class="Submain1 domicile">Lancy</span> <br/>
+                        <b>Langue:</b><span class="Submain1 langue">Français</span> <br/>
+                        <b>Formation:</b><span class="Submain1 formation">Dessinateur et</span>
                     </div>
                 </div>
             </div>
@@ -76,25 +66,30 @@ Template Name: Edification L'equipe
                 <div class="lequipe-slider-bottom-left">
                   
 
-                    <b>Depuis 2017: Conducteur de travaux</b><br/>
-                    Alpha Edification SA<br/>
+                    
+                        <b>5 ans d’activité dans un
+                        bureau d’ingénieur</b><br/>
 
-                    <b>2015 à 2017: Conducteur de travaux</b><br/>
-                    Rampini Construction SA<br/>
+
+                    <b>20 ans dans une grand entreprise de la place
+                        (dont 3 en Guyane française)</b>
                 </div>
                 <div class="lequipe-slider-bottom-center">
-                    <b>011 à 2015: Conducteur de travaux</b><br/>
-                    F. Bernasconi SA<br/>
+                    <b>15 ans dans une PME
+                        genevoise de démolition & rénovation</b><br/>
 
-                    <b>2007 à 2011: Conducteur de travaux</b><br/>
-                    Implenia Construction SA<br/>
+
+
+                        <b>240 ans d’expérience
+                    entrepreneuriale</b>
                 </div>
                 <div class="lequipe-slider-bottom-right">
-                <b>011 à 2015: Conducteur de travaux</b><br/>
-                    F. Bernasconi SA<br/><br/>
+                <b>15 ans dans une PME
+                    genevoise de démolition & rénovation  </b><br/>
+                  
 
-                    <b>2007 à 2011: Conducteur de travaux</b><br/>
-                    Implenia Construction SA
+                    <b>240 ans d’expérience
+                        entrepreneuriale</b>
                 </div>
                 </div>
                 </div>
@@ -106,7 +101,7 @@ Template Name: Edification L'equipe
 
 <script type="text/javascript">
     jQuery(document).ready(function() {
-        jQuery('body').attr('page-color', 'white');
+        jQuery('body').attr('page-color', 'black');
     });
 </script>
 
