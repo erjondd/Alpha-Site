@@ -18,6 +18,7 @@
 @font-face {
   font-family: "tuskergrotesk-semibold";
   src: url("../fonts/TuskerGrotesk-6600Semibold.otf");
+  font-display: block;
 }
 
 html {
@@ -86,7 +87,7 @@ a:hover {
       li {
         a {
           color: black;
-          &:hover{
+          &:hover {
             color: #888;
           }
         }
@@ -100,7 +101,7 @@ a:hover {
       }
     }
     .menu-icon-x svg {
-      path{
+      path {
         fill: #000;
       }
     }
@@ -147,7 +148,7 @@ a:hover {
     width: calc(3vw + 4vh);
     height: calc(3vw + 4vh);
     cursor: pointer;
-    
+
     &:hover {
       path {
         transition: all 0.5s ease-in-out;
@@ -425,8 +426,8 @@ a:hover {
   position: relative;
   transition: all 0.6s ease-out;
   font-size: calc(9vh + 4.5vw);
-  
-  &:hover{
+
+  &:hover {
     color: #888;
   }
 }
@@ -467,6 +468,10 @@ a:hover {
   color: #fff;
   font-size: calc(4vh + 4vw);
   line-height: 1.2;
+
+  &:hover {
+    color: #888;
+  }
 }
 .menu > li.menu-item-has-children.menu-item-has-children-open > a::after {
   transform: rotateX(-180deg);
@@ -845,7 +850,6 @@ a:hover {
   justify-content: center;
 }
 .lequipe-left-center-right-infos {
-  height: 100%;
   display: flex;
 }
 
@@ -1076,6 +1080,6 @@ a:hover {
 .batiment-lequipe .nationalite,
 .batiment-lequipe .domicile,
 .batiment-lequipe .langue,
-.batiment-lequipe .formation{
-  padding-left:0.3vw;
+.batiment-lequipe .formation {
+  padding-left: 0.3vw;
 }
