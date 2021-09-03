@@ -29,7 +29,6 @@ html {
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
   height: 100%;
   background-color: black;
   overflow: hidden;
@@ -64,9 +63,6 @@ a:hover {
       }
     }
   }
-
-  .menu-icon {
-  }
 }
 .menu-open-white {
   cursor: pointer;
@@ -90,6 +86,9 @@ a:hover {
       li {
         a {
           color: black;
+          &:hover{
+            color: #888;
+          }
         }
       }
     }
@@ -100,8 +99,10 @@ a:hover {
         }
       }
     }
-    .menu-icon-x img {
-      filter: invert(1);
+    .menu-icon-x svg {
+      path{
+        fill: #000;
+      }
     }
   }
 
@@ -116,10 +117,24 @@ a:hover {
   z-index: 1;
   top: 8%;
   z-index: 10;
-  img {
+  svg {
     width: calc(2vw + 2vh);
     height: calc(2vw + 2vh);
     cursor: pointer;
+
+    &:hover {
+      path {
+        transition: all 0.5s ease-in-out;
+        &:first-child {
+          fill: #b3b3b3;
+          transform: translate(1331.14px, -123.873px);
+        }
+        &:last-child {
+          fill: #808080;
+          transform: translate(1300.14px, -123.873px);
+        }
+      }
+    }
   }
 }
 
@@ -128,10 +143,24 @@ a:hover {
   top: 8%;
   right: calc(10vw + 15px);
   z-index: 10;
-  img {
+  svg {
     width: calc(3vw + 4vh);
     height: calc(3vw + 4vh);
     cursor: pointer;
+    
+    &:hover {
+      path {
+        transition: all 0.5s ease-in-out;
+        &:first-child {
+          fill: #b3b3b3;
+          //transform: translate(1331.14px, -123.873px);
+        }
+        &:last-child {
+          fill: #808080;
+          //transform: translate(1300.14px, -123.873px);
+        }
+      }
+    }
   }
 }
 
@@ -248,13 +277,40 @@ a:hover {
 
   justify-content: center;
 }
-.valuers-arrow-up img {
-  width: 4vw;
-  cursor: pointer;
-}
-.valuers-arrow-down img {
-  width: 4vw;
-  cursor: pointer;
+.valuers-arrow-up,
+.valuers-arrow-down {
+  svg {
+    width: 4vw;
+    cursor: pointer;
+    &:hover {
+      path {
+        &:first-child {
+          opacity: 0.2;
+        }
+        &:last-child {
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+  // &:hover {
+  //   opacity: 0.4;
+
+  //   &:focus {
+  //     opacity: 0.1;
+  //   }
+  // }
+  &:focus-within {
+    opacity: 0.1;
+  }
+
+  &:focus {
+    opacity: 0.1;
+  }
+
+  &:visited {
+    opacity: 0.1;
+  }
 }
 .info-box.box1 {
   background: #363636;
@@ -365,12 +421,16 @@ a:hover {
   z-index: -5;
   pointer-events: none;
 }
-.menu > li > a {
+.menu li a {
   color: #fff;
   // font-size: calc(4vh + 7.5vw);
   position: relative;
   transition: all 0.6s ease-out;
   font-size: calc(9vh + 4.5vw);
+  
+  &:hover{
+    color: #888;
+  }
 }
 .menu > li {
   height: 25%;
@@ -408,7 +468,7 @@ a:hover {
 .menu-item-has-children-open .sub-menu > li > a {
   color: #fff;
   font-size: calc(4vh + 4vw);
-  line-height: 1;
+  line-height: 1.2;
 }
 .menu > li.menu-item-has-children.menu-item-has-children-open > a::after {
   transform: rotateX(-180deg);
