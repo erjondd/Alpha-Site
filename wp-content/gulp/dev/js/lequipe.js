@@ -3,7 +3,7 @@ jQuery(document).ready(function () {
 
     $('.dott').click(function () {
         var dotname = $(this).attr('dotname');
-        console.log($(this),  $(this).attr('dotname'))
+       
 
         $(".page-lequipe").removeClass("lequipe-alexandre lequipe-hugo lequipe-nadine lequipe-alone");
         $(".page-lequipe").addClass('lequipe-' + dotname);

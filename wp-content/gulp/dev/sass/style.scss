@@ -766,7 +766,7 @@ a:hover {
 }
 .lequipe-all-slider {
   flex: 0 0 50%;
-  font-size: calc(0.5vh + 0.8vw);
+  font-size: calc(.4vh + .6vw);
   position: relative;
 }
 .seconday-main-info {
@@ -802,7 +802,7 @@ a:hover {
   flex: 0 0 50%;
   color: #fff;
   /* padding: 45px 30px; */
-  padding: 2vh 2vw;
+  padding: 4vh 4vw;
   position: relative;
 }
 .main-info img {
@@ -1082,4 +1082,15 @@ a:hover {
 .batiment-lequipe .langue,
 .batiment-lequipe .formation {
   padding-left: 0.3vw;
+}
+
+.in-edification-lequipe .Submain1{
+  display:-webkit-box;
+}
+.in-edification-lequipe .nationalite b,
+.in-edification-lequipe .ne.en b,
+.in-edification-lequipe .domicile b,
+.in-edification-lequipe .langue b,
+.in-edification-lequipe .formation b{
+  padding-right: 0.3vw;
 }
