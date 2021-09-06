@@ -10,7 +10,9 @@ Template Name: Edification L'equipe
 
 <div class="page page-lequipe lequipe-alexandre" current="alexandre">
     <div class="page-header">
+   
         <div class="page-header-background"></div>
+         
         <div class="page-header-content">
             <h1>L'equipe <br>
                 <span class="alexandre">Alexandre Adami</span>
@@ -22,6 +24,7 @@ Template Name: Edification L'equipe
 
         </div>
     </div>
+    <?php if(!wp_is_mobile()) { ?>
     <div class="page-content">
         <div class="lequipe-informations">
             <div class="main-info">
@@ -155,6 +158,30 @@ Template Name: Edification L'equipe
         </div>
 
     </div>
+    <?php } ?>
+    <div class="lequipe-informations-mobile">
+        <div class="main-info-mobile">
+        Nous développons notre activité dans les secteurs du gros œuvre principalement, et du second œuvre accessoirement.
+<br/><br/>
+L’exécution de travaux de bâtiment et de génie civil est au cœur de notre action.
+<br/><br/>
+Notre expérience et nos compétences sont des atouts.
+<br/><br/>
+L’exécution de travaux de bâtiment et de génie civil est au cœur de notre action.
+<br/><br/>
+Notre expérience et nos compétences sont des atouts majeurs permettant une saine diversification des activités d’Alpha Edification SA.
+        </div>
+    </div>
+    <div class="lequipe-slider-mobile">
+    <div class="all-slider-top-pic-mobile">
+                    <span class="alexandre"><img src="<?= get_template_directory_uri() ?>/images/person-1.jpg" alt="Alexandri"></span>
+                    <span class="hugo"><img src="<?= get_template_directory_uri() ?>/images/person-2.jpg" alt="Alexandri"></span>
+                    <span class="nadine">Nadine Haro</span>
+                    <span class="alone">alone</span>
+
+                </div>
+    </div>
+
 </div>
 
 <script type="text/javascript">

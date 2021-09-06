@@ -19,7 +19,8 @@ jQuery(document).ready(function () {
   $('.menu-icon-x').click(function(){
     $('.menu').removeClass('menu-single-submenu');
     $('.menu-item-has-children-open').removeClass('menu-item-has-children-open');
-    $('.menu-wrapper').removeClass('menu-open black white')
+    $('.current-ref-open').removeClass('current-ref-open');
+    $('.menu-wrapper').removeClass('menu-open black white menu-ref-open batiment genie-civil artisans-macon')
   })
   
   $('.menu-item-has-children > a').click(function (e) {
