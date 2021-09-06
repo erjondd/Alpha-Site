@@ -1,0 +1,255 @@
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 768px) {
+  .white-homepage-bottom,
+  .black-homepage-bottom {
+    font-size: 26px;
+  }
+  
+  .menu-ref-open {
+    .menu {
+      justify-content: flex-start;
+    }
+  }
+
+  .menu-wrapper.menu-ref-open .menu li:not(.current-ref-open) {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    a {
+      height: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .menu-references-content::before {
+    bottom: 20vh;
+    right: 0;
+    width: 100%;
+    height: 5vh;
+  }
+
+  .menu-references-content::after {
+    top: 20vh;
+    right: 0;
+    width: 100%;
+    height: 5vh;
+  }
+  .menu-wrapper.menu-ref-open .menu-references-content::after,
+  .menu-wrapper.menu-ref-open .menu-references-content::before {
+    content: none;
+  }
+  .menu-references-content .references-artisans-macon,
+  .menu-references-content .references-batiment,
+  .menu-references-content .references-genie-civil {
+    width: 100%;
+    margin: 150px 0 215px 0;
+    padding: 0 15px;
+  }
+
+  .white-homepage-top {
+    height: calc(100% - 100px);
+  }
+  .white-homepage-bottom {
+    height: 100px;
+  }
+
+  .black-homepage-top {
+    height: calc(100% - 100px);
+  }
+  .black-homepage-bottom {
+    height: 100px;
+  }
+  .menu-mobile-batiment,
+  .menu-mobile-edification {
+    font-size: 26px;
+    font-family: "tuskergrotesk-semibold";
+    height: 100px;
+  }
+  .menu-icon-x {
+    right: 15px;
+  }
+
+  .menu {
+    justify-content: flex-end;
+    padding: 15px 15px 215px 15px;
+  }
+
+  .menu > li {
+    height: auto;
+  }
+
+  .menu > li > a {
+    font-size: 42px;
+  }
+
+  .menu-content {
+    .current-ref-open a::before {
+      width: 27px;
+      height: 27px;
+    }
+    .current-ref-open a:hover::before {
+      opacity: 1;
+    }
+    &.menu-white {
+      .menu {
+        li {
+          a {
+            &:hover {
+              &::after {
+                opacity: 1;
+              }
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+
+    &.menu-black {
+      .menu {
+        li {
+          a {
+            &:hover {
+              &::after {
+                opacity: 1;
+              }
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .menu-item-has-children-open .sub-menu > li > a {
+    font-size: 28px;
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+      color: #000;
+    }
+  }
+
+  .homepage {
+    flex-direction: column;
+  }
+  .black-homepage {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .homepage-logo-home {
+    display: none;
+  }
+  .white-homepage {
+    height: 50%;
+  }
+  .black-homepage {
+    height: 50%;
+  }
+  .menu-responsive-logo {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 55px;
+    height: 55px;
+    z-index: 1;
+  }
+
+  .page {
+    height: auto;
+  }
+
+  //prestations-edification
+  .prestations-info-mobile{
+    width: 100%;
+    background: white;
+    position: relative;
+    display: flex;
+  }
+  .prestations-video-play-icon-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 45px;
+    height: 40px;
+    z-index: 1;
+  }
+.prestations-video-mobile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.prestations-video-label-mobile::after{
+  content:"";
+  
+    width: 100%;
+    height: 100%;
+    background-color: white;
+   
+    position: absolute;
+}
+//body overflow
+body{
+  overflow:auto;
+}
+.page-content{
+  height:auto;
+  display: block;
+}
+.prestations-all-boxes-mobile {
+  color: #fff;
+  display: block;
+  font-family: 'poppins-regular';
+  font-size: 17px;
+}
+.prestations-boxes-mobile{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.prestations-box1-mobile{
+background:#363636;
+}
+.prestations-box2-mobile{
+  background:#808080;
+}
+.prestations-box3-mobile{
+  background:#B3B3B3;
+}
+.prestations-box4-mobile{
+  background:#D3D3D3;
+}
+.prestations-box5-mobile{
+  background:#E5E5E5;
+}
+.prestations-box6-mobile{
+  background:#000;
+  font-family: 'tuskergrotesk-semibold';
+    font-size: 44px;
+    
+    svg{
+      height: 44px;
+      
+    }
+    span{
+      padding-right: 21px;
+    }
+}
+}
+@media only screen and (max-width: 525px) {
+}
+@media only screen and (max-width: 400px) {
+}
