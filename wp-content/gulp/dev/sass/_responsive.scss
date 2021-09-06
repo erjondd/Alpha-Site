@@ -178,7 +178,7 @@
     position: absolute;
     top: 50%;
     right: 50%;
-    width: 45px;
+   
     height: 40px;
     z-index: 1;
   }
@@ -247,6 +247,18 @@ background:#363636;
     span{
       padding-right: 21px;
     }
+}
+
+//edification-lequipe
+.main-info-mobile {
+  font-size: 15px;
+  padding: 40px;
+  background: white;
+  font-family:'poppins-regular'
+}
+.all-slider-top-pic-mobile span, 
+.all-slider-top-pic-mobile img{
+  width:100%;
 }
 }
 @media only screen and (max-width: 525px) {
