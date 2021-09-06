@@ -63,31 +63,31 @@ Template Name: Edification L'equipe
                     <img src="<?= get_template_directory_uri() ?>/images/conducter.svg" alt="Conducter">
                     <div class="all-slider-top-info-description in-edification-lequipe">
                         
-                        <div class="Submain1 ne en"><b>Né en</b>
+                        <div class="Submain1 ne en"><span class="bold-tittle-lequipe">Né en</span>
                             <span class="alexandre">1986 à Cluses, France</span>
                             <span class="hugo">1982 à Genève</span>
                             <span class="nadine">1979 à Genève</span>
                         </div>
                        
-                        <div class="Submain1 nationalite"> <b>Nationalité:</b>
+                        <div class="Submain1 nationalite"><span class="bold-tittle-lequipe">Nationalité:</span>
                             <span class="alexandre">Française</span>
                             <span class="hugo">Suisse et Espagnole</span>
                             <span class="nadine">Suisse</span>
                         </div>
                         
-                        <div class="Submain1 domicile"><b>Domicile:</b>
+                        <div class="Submain1 domicile"><span class="bold-tittle-lequipe">Domicile:</span>
                             <span class="alexandre"> Eteaux (FR)</span>
                             <span class="hugo">Genève</span>
                             <span class="nadine">Petit-Lancy</span>
                         </div>
                         
-                        <div class="Submain1 langue"><b>Langue:</b>
+                        <div class="Submain1 langue"><span class="bold-tittle-lequipe">Langue:</span>
                             <span class="alexandre"> Français</span>
                             <span class="hugo">Français, espagnol</span>
                             <span class="nadine">Français</span>
                         </div>
                         
-                        <div class="Submain1 formation"><b>Formation:</b>
+                        <div class="Submain1 formation"><span class="bold-tittle-lequipe">Formation:</span>
                             <span class="alexandre"> DUT Génie Civil</span>
                             <span class="hugo">Ingénieur Civil HES</span>
                             <span class="nadine">Employée de bureau et Spécialiste en assurances sociales avec brevet fédéral</span>

@@ -41,7 +41,11 @@ $valeurs_submain_tittle_3 = get_field("valeurs_submain_tittle_3");
   <div class="page-content">
     <div class="page-content-info">
       <div class="page-content-info-main">
-        <img src="<?= get_template_directory_uri() ?>/images/no_vals.svg">
+        <div class="main-valuers-titleque">
+          nos<br/>
+          valeurs
+        </div>
+        <!-- <img src="<?= get_template_directory_uri() ?>/images/no_vals.svg"> -->
         <p class="info-main-bold">
           <?= $valeur_left_bold_text ?>
         </p>
