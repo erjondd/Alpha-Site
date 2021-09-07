@@ -57,56 +57,58 @@ $edification_prestations_subtittle_3_video = get_field("edification_prestations_
         </div>
     </div>
     <div class="page-content">
-        <?php if(!wp_is_mobile()) { ?>
-        <div class="prestations-info">
-            <img class="prestations-video-play-icon" src="<?= get_template_directory_uri() ?>/images/video-play.svg" alt="">
-            <span class="prestations-video-label">vidéo</span>
-            <video class="prestations-video" src="<?= $edification_prestations_subtittle_1_video['url'] ?>"></video>
-        </div>
-        <div class="prestations-all-boxes">
-            <div class="prestations-boxes-left">
-                <div class="prestations-box1-left"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_left_1 ?></span>
-                    <span class="batiment"><?= $edification_prestations_subtittle_2_box_left_1 ?></span>
-                    <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_left_1 ?></span>
+        <?php if (!wp_is_mobile()) { ?>
+            <div class="prestations-info">
+                <img class="prestations-video-play-icon" src="<?= get_template_directory_uri() ?>/images/video-play.svg" alt="">
+                <img class="prestations-video-pause-icon" src="<?= get_template_directory_uri() ?>/images/video-pause.svg" alt="">
+
+                <span class="prestations-video-label">vidéo</span>
+                <video class="prestations-video" src="<?= $edification_prestations_subtittle_1_video['url'] ?>"></video>
+            </div>
+            <div class="prestations-all-boxes">
+                <div class="prestations-boxes-left">
+                    <div class="prestations-box1-left"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_left_1 ?></span>
+                        <span class="batiment"><?= $edification_prestations_subtittle_2_box_left_1 ?></span>
+                        <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_left_1 ?></span>
+                    </div>
+                    <div class="prestations-box2-left"> <span class="genie_civil"><?= $edification_prestations_subtittle_1_box_left_2 ?></span>
+                        <span class="batiment"><?= $edification_prestations_subtittle_2_box_left_2 ?></span>
+                        <span class="artisans_macon"><?= $edification_prestations_subtittle_2_box_left_3 ?></span>
+                    </div>
+                    <div class="prestations-box3-left"><span class="genie_civil"><?= $edification_prestations_subtittle_3_box_left_1 ?></span>
+                        <span class="batiment"><?= $edification_prestations_subtittle_3_box_left_2 ?></span>
+                        <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_left_3 ?></span>
+                    </div>
                 </div>
-                <div class="prestations-box2-left"> <span class="genie_civil"><?= $edification_prestations_subtittle_1_box_left_2 ?></span>
-                    <span class="batiment"><?= $edification_prestations_subtittle_2_box_left_2 ?></span>
-                    <span class="artisans_macon"><?= $edification_prestations_subtittle_2_box_left_3 ?></span>
-                </div>
-                <div class="prestations-box3-left"><span class="genie_civil"><?= $edification_prestations_subtittle_3_box_left_1 ?></span>
-                    <span class="batiment"><?= $edification_prestations_subtittle_3_box_left_2 ?></span>
-                    <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_left_3 ?></span>
+                <div class="prestations-boxes-right">
+                    <div class="prestations-box1-right"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_right_1 ?></span>
+                        <span class="batiment"><?= $edification_prestations_subtittle_2_box_right_1 ?></span>
+                        <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_right_1 ?></span>
+                    </div>
+                    <div class="prestations-box2-right"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_right_2 ?></span>
+                        <span class="batiment"><?= $edification_prestations_subtittle_2_box_right_2 ?></span>
+                        <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_right_2 ?></span>
+                    </div>
+                    <div class="prestations-box3-right box-slide-click">
+                        <span class="batiment">
+                            <?= $edification_prestations_subtittle_1_box_right_3 ?>
+
+                        </span>
+                        <span class="artisans_macon">
+                            <?= $edification_prestations_subtittle_2_box_right_3 ?>
+
+                        </span>
+                        <span class="genie_civil">
+                            <?= $edification_prestations_subtittle_3_box_right_3 ?>
+
+                        </span>
+                        <svg id="Group_56143" data-name="Group 56143" xmlns="http://www.w3.org/2000/svg" width="20.092" height="55.849" viewBox="0 0 20.092 55.849">
+                            <path id="Path_36303" data-name="Path 36303" d="M20.06,27.881H9.829L5.209,14.774l-.09-.257-.032-.087L0,0H10.234l4.71,13.368Z" transform="translate(20.092 27.881) rotate(180)" fill="#fff" />
+                            <path id="Path_36304" data-name="Path 36304" d="M20.092,0,14.976,14.516v0L10.263,27.881l-.029.087H0l.032-.087,5.087-14.43.029-.087L9.858,0Z" transform="translate(20.092 55.849) rotate(180)" fill="#fff" />
+                        </svg>
+                    </div>
                 </div>
             </div>
-            <div class="prestations-boxes-right">
-                <div class="prestations-box1-right"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_right_1 ?></span>
-                    <span class="batiment"><?= $edification_prestations_subtittle_2_box_right_1 ?></span>
-                    <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_right_1 ?></span>
-                </div>
-                <div class="prestations-box2-right"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_right_2 ?></span>
-                    <span class="batiment"><?= $edification_prestations_subtittle_2_box_right_2 ?></span>
-                    <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_right_2 ?></span>
-                </div>
-                <div class="prestations-box3-right box-slide-click">
-                <span class="batiment">
-                   <?= $edification_prestations_subtittle_1_box_right_3 ?>
-                    
-                </span>
-                <span class="artisans_macon">
-                <?= $edification_prestations_subtittle_2_box_right_3 ?>
-                       
-                </span>
-                <span class="genie_civil">
-                <?= $edification_prestations_subtittle_3_box_right_3 ?>
-                   
-                </span>
-                <svg id="Group_56143" data-name="Group 56143" xmlns="http://www.w3.org/2000/svg" width="20.092" height="55.849" viewBox="0 0 20.092 55.849">
-                        <path id="Path_36303" data-name="Path 36303" d="M20.06,27.881H9.829L5.209,14.774l-.09-.257-.032-.087L0,0H10.234l4.71,13.368Z" transform="translate(20.092 27.881) rotate(180)" fill="#fff" />
-                        <path id="Path_36304" data-name="Path 36304" d="M20.092,0,14.976,14.516v0L10.263,27.881l-.029.087H0l.032-.087,5.087-14.43.029-.087L9.858,0Z" transform="translate(20.092 55.849) rotate(180)" fill="#fff" />
-                    </svg>
-                </div>
-            </div>
-        </div>
         <?php } ?>
         <div class="prestations-info-mobile">
             <img class="prestations-video-play-icon-mobile" src="<?= get_template_directory_uri() ?>/images/video-play.svg" alt="">
@@ -114,48 +116,48 @@ $edification_prestations_subtittle_3_video = get_field("edification_prestations_
             <video class="prestations-video-mobile" src="<?= $edification_prestations_subtittle_1_video['url'] ?>"></video>
         </div>
         <div class="prestations-all-boxes-mobile">
-            
-                <div class="prestations-box1-mobile prestations-boxes-mobile"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_left_1 ?></span>
-                    <span class="batiment"><?= $edification_prestations_subtittle_2_box_left_1 ?></span>
-                    <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_left_1 ?></span>
-                </div>
-                <div class="prestations-box2-mobile prestations-boxes-mobile"> <span class="genie_civil"><?= $edification_prestations_subtittle_1_box_left_2 ?></span>
-                    <span class="batiment"><?= $edification_prestations_subtittle_2_box_left_2 ?></span>
-                    <span class="artisans_macon"><?= $edification_prestations_subtittle_2_box_left_3 ?></span>
-                </div>
-                <div class="prestations-box3-mobile prestations-boxes-mobile"><span class="genie_civil"><?= $edification_prestations_subtittle_3_box_left_1 ?></span>
-                    <span class="batiment"><?= $edification_prestations_subtittle_3_box_left_2 ?></span>
-                    <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_left_3 ?></span>
-                </div>
-            
-            
-                <div class="prestations-box4-mobile prestations-boxes-mobile"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_right_1 ?></span>
-                    <span class="batiment"><?= $edification_prestations_subtittle_2_box_right_1 ?></span>
-                    <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_right_1 ?></span>
-                </div>
-                <div class="prestations-box5-mobile prestations-boxes-mobile"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_right_2 ?></span>
-                    <span class="batiment"><?= $edification_prestations_subtittle_2_box_right_2 ?></span>
-                    <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_right_2 ?></span>
-                </div>
-                <div class="prestations-box6-mobile box-slide-click prestations-boxes-mobile">
+
+            <div class="prestations-box1-mobile prestations-boxes-mobile"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_left_1 ?></span>
+                <span class="batiment"><?= $edification_prestations_subtittle_2_box_left_1 ?></span>
+                <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_left_1 ?></span>
+            </div>
+            <div class="prestations-box2-mobile prestations-boxes-mobile"> <span class="genie_civil"><?= $edification_prestations_subtittle_1_box_left_2 ?></span>
+                <span class="batiment"><?= $edification_prestations_subtittle_2_box_left_2 ?></span>
+                <span class="artisans_macon"><?= $edification_prestations_subtittle_2_box_left_3 ?></span>
+            </div>
+            <div class="prestations-box3-mobile prestations-boxes-mobile"><span class="genie_civil"><?= $edification_prestations_subtittle_3_box_left_1 ?></span>
+                <span class="batiment"><?= $edification_prestations_subtittle_3_box_left_2 ?></span>
+                <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_left_3 ?></span>
+            </div>
+
+
+            <div class="prestations-box4-mobile prestations-boxes-mobile"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_right_1 ?></span>
+                <span class="batiment"><?= $edification_prestations_subtittle_2_box_right_1 ?></span>
+                <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_right_1 ?></span>
+            </div>
+            <div class="prestations-box5-mobile prestations-boxes-mobile"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_right_2 ?></span>
+                <span class="batiment"><?= $edification_prestations_subtittle_2_box_right_2 ?></span>
+                <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_right_2 ?></span>
+            </div>
+            <div class="prestations-box6-mobile box-slide-click prestations-boxes-mobile">
                 <span class="batiment">
-                   <?= $edification_prestations_subtittle_1_box_right_3 ?>
-                    
+                    <?= $edification_prestations_subtittle_1_box_right_3 ?>
+
                 </span>
                 <span class="artisans_macon">
-                <?= $edification_prestations_subtittle_2_box_right_3 ?>
-                       
+                    <?= $edification_prestations_subtittle_2_box_right_3 ?>
+
                 </span>
                 <span class="genie_civil">
-                <?= $edification_prestations_subtittle_3_box_right_3 ?>
-                   
+                    <?= $edification_prestations_subtittle_3_box_right_3 ?>
+
                 </span>
                 <svg id="Group_56143" data-name="Group 56143" xmlns="http://www.w3.org/2000/svg" width="20.092" height="55.849" viewBox="0 0 20.092 55.849">
-                        <path id="Path_36303" data-name="Path 36303" d="M20.06,27.881H9.829L5.209,14.774l-.09-.257-.032-.087L0,0H10.234l4.71,13.368Z" transform="translate(20.092 27.881) rotate(180)" fill="#fff" />
-                        <path id="Path_36304" data-name="Path 36304" d="M20.092,0,14.976,14.516v0L10.263,27.881l-.029.087H0l.032-.087,5.087-14.43.029-.087L9.858,0Z" transform="translate(20.092 55.849) rotate(180)" fill="#fff" />
-                    </svg>
-                </div>
-            
+                    <path id="Path_36303" data-name="Path 36303" d="M20.06,27.881H9.829L5.209,14.774l-.09-.257-.032-.087L0,0H10.234l4.71,13.368Z" transform="translate(20.092 27.881) rotate(180)" fill="#fff" />
+                    <path id="Path_36304" data-name="Path 36304" d="M20.092,0,14.976,14.516v0L10.263,27.881l-.029.087H0l.032-.087,5.087-14.43.029-.087L9.858,0Z" transform="translate(20.092 55.849) rotate(180)" fill="#fff" />
+                </svg>
+            </div>
+
         </div>
     </div>
 

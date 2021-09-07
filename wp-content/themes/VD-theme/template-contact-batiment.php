@@ -28,7 +28,7 @@ Template Name: Contact Batiment
     </div>
     <div class="page-content">
         <div class="contact-map-picture">
-        <iframe class="module" src="<?= $map ?>" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="module" src="<?= $map ?>" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
         </div>
         <div class="contact-infos">
             <div class="contact-edification-top">
@@ -52,6 +52,7 @@ Template Name: Contact Batiment
 <script type="text/javascript">
 jQuery(document).ready(function() {
     jQuery('body').attr('page-color', 'black');
+    jQuery('body').addClass('contact');
 });
 </script>
 
