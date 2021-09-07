@@ -63,31 +63,69 @@ $edification_prestations_subtittle_3_video = get_field("edification_prestations_
                 <img class="prestations-video-pause-icon" src="<?= get_template_directory_uri() ?>/images/video-pause.svg" alt="">
 
                 <span class="prestations-video-label">vidéo</span>
-                <video class="prestations-video" src="<?= $edification_prestations_subtittle_1_video['url'] ?>"></video>
+                <span class="genie_civil">
+                    <video class="prestations-video " src="<?= $edification_prestations_subtittle_1_video['url'] ?>"></video>
+                </span>
+                <span class="batiment">
+                    <video class="prestations-video " src="<?= $edification_prestations_subtittle_2_video['url'] ?>"></video>
+                </span>
+                <span class="artisans_macon">
+                    <video class="prestations-video " src="<?= $edification_prestations_subtittle_3_video['url'] ?>"></video>
+                </span>
             </div>
             <div class="prestations-all-boxes">
                 <div class="prestations-boxes-left">
-                    <div class="prestations-box1-left"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_left_1 ?></span>
-                        <span class="batiment"><?= $edification_prestations_subtittle_2_box_left_1 ?></span>
-                        <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_left_1 ?></span>
+                    <div class="prestations-box1-left">
+                        <span class="genie_civil"><?= $edification_prestations_subtittle_1_box_left_1 ?>
+                    </span>
+                        <span class="batiment">
+                            <?= $edification_prestations_subtittle_2_box_left_1 ?>
+                        </span>
+                        <span class="artisans_macon">
+                            <?= $edification_prestations_subtittle_3_box_left_1 ?>
+                        </span>
                     </div>
-                    <div class="prestations-box2-left"> <span class="genie_civil"><?= $edification_prestations_subtittle_1_box_left_2 ?></span>
-                        <span class="batiment"><?= $edification_prestations_subtittle_2_box_left_2 ?></span>
-                        <span class="artisans_macon"><?= $edification_prestations_subtittle_2_box_left_3 ?></span>
+                    <div class="prestations-box2-left"> 
+                        <span class="genie_civil"><?= $edification_prestations_subtittle_1_box_left_2 ?>
+                    </span>
+                        <span class="batiment">
+                            <?= $edification_prestations_subtittle_2_box_left_2 ?>
+                        </span>
+                        <span class="artisans_macon">
+                            <?= $edification_prestations_subtittle_2_box_left_3 ?>
+                        </span>
                     </div>
-                    <div class="prestations-box3-left"><span class="genie_civil"><?= $edification_prestations_subtittle_3_box_left_1 ?></span>
-                        <span class="batiment"><?= $edification_prestations_subtittle_3_box_left_2 ?></span>
-                        <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_left_3 ?></span>
+                    <div class="prestations-box3-left">
+                        <span class="genie_civil"><?= $edification_prestations_subtittle_3_box_left_1 ?>
+                    </span>
+                        <span class="batiment">
+                            <?= $edification_prestations_subtittle_3_box_left_2 ?>
+                        </span>
+                        <span class="artisans_macon">
+                            <?= $edification_prestations_subtittle_3_box_left_3 ?>
+                        </span>
                     </div>
                 </div>
                 <div class="prestations-boxes-right">
-                    <div class="prestations-box1-right"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_right_1 ?></span>
-                        <span class="batiment"><?= $edification_prestations_subtittle_2_box_right_1 ?></span>
-                        <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_right_1 ?></span>
+                    <div class="prestations-box1-right">
+                        <span class="genie_civil"><?= $edification_prestations_subtittle_1_box_right_1 ?>
+                    </span>
+                        <span class="batiment">
+                            <?= $edification_prestations_subtittle_2_box_right_1 ?>
+                        </span>
+                        <span class="artisans_macon">
+                            <?= $edification_prestations_subtittle_3_box_right_1 ?>
+                        </span>
                     </div>
-                    <div class="prestations-box2-right"><span class="genie_civil"><?= $edification_prestations_subtittle_1_box_right_2 ?></span>
-                        <span class="batiment"><?= $edification_prestations_subtittle_2_box_right_2 ?></span>
-                        <span class="artisans_macon"><?= $edification_prestations_subtittle_3_box_right_2 ?></span>
+                    <div class="prestations-box2-right">
+                        <span class="genie_civil"><?= $edification_prestations_subtittle_1_box_right_2 ?>
+                    </span>
+                        <span class="batiment">
+                            <?= $edification_prestations_subtittle_2_box_right_2 ?>
+                        </span>
+                        <span class="artisans_macon">
+                            <?= $edification_prestations_subtittle_3_box_right_2 ?>
+                        </span>
                     </div>
                     <div class="prestations-box3-right box-slide-click">
                         <span class="batiment">
@@ -110,10 +148,10 @@ $edification_prestations_subtittle_3_video = get_field("edification_prestations_
                 </div>
             </div>
         <?php } ?>
-        <div class="prestations-info-mobile">
+        <div class="prestations-info prestations-info-mobile">
             <img class="prestations-video-play-icon-mobile" src="<?= get_template_directory_uri() ?>/images/video-play.svg" alt="">
             <span class="prestations-video-label-mobile"></span>
-            <video class="prestations-video-mobile" src="<?= $edification_prestations_subtittle_1_video['url'] ?>"></video>
+            <video class="prestations-video prestations-video-mobile" src="<?= $edification_prestations_subtittle_1_video['url'] ?>"></video>
         </div>
         <div class="prestations-all-boxes-mobile">
 

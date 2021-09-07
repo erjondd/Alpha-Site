@@ -16,10 +16,14 @@
     height: 0;
     padding: 0;
     margin: 0;
-    a {
+    & > a {
       height: 0;
       padding: 0;
       margin: 0;
+      font-size: 0;
+    }
+    .current-ref-open{
+      margin-top:60px;
     }
   }
 
@@ -239,6 +243,14 @@
 
     position: absolute;
   }
+  //////////erjoni
+  .prestations-info .prestations-video{
+    position: relative;
+  }
+  .prestations-info{
+    padding-top:0;
+  }
+ 
   //body overflow
   body {
     overflow: auto;
@@ -466,6 +478,45 @@ img{
 }
 .contact-edification-top{
   padding-bottom: 69px;
+}
+.batiment-presation-info-mobile{
+  font-size: 26px;
+  background-color: white;
+  font-family: "tuskergrotesk-semibold";
+  color:black;
+  text-transform: uppercase;
+  padding:10px;
+}
+
+.menu-content{
+  transition: all 1s;
+  opacity: 0;
+  display:flex;
+  pointer-events: none;
+  z-index: -5;
+}
+.menu-open{
+  &.white{
+    .menu-content{
+      opacity: 1;
+      pointer-events: all;
+      &.menu-white{
+        z-index: 5;
+      }
+    }
+  }
+  &.black{
+    .menu-content{
+      opacity: 1;
+      pointer-events: all;
+      &.menu-black{
+        z-index: 5;
+      }
+    }
+  }
+} 
+.menu-icon{
+  z-index: 4;
 }
 }
 @media only screen and (max-width: 525px) {

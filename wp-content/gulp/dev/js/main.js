@@ -2,7 +2,7 @@ jQuery(document).ready(function () {
 
   $('.prestations-info').click(function () {
     var _this = $(this);
-    var video = $('.prestations-video')[0];
+    var video = $('.prestations-video')[2];
     if (_this.hasClass('video-is-played')) {
       video.pause();
       _this.removeClass('video-is-played');
@@ -10,7 +10,7 @@ jQuery(document).ready(function () {
     } else {
       video.play();
       _this.addClass('video-is-played');
-      console.log('play')
+      console.log('play');
     }
   });
 

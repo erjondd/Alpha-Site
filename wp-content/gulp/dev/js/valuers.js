@@ -34,21 +34,18 @@ jQuery(document).ready(function () {
             $('.page-enterprise').removeClass('enterprise-vision')
             $('.page-enterprise').addClass('enterprise-mission')
             $('.page-enterprise').attr('current', 'mission');
-           
         }
 
         if(anm == 'moyens') {
             $('.page-enterprise').removeClass('enterprise-moyens')
             $('.page-enterprise').addClass('enterprise-vision')
             $('.page-enterprise').attr('current', 'vision');
-            
         }
 
         if(anm == 'mission') {
             $('.page-enterprise').removeClass('enterprise-mission')
             $('.page-enterprise').addClass('enterprise-moyens')
             $('.page-enterprise').attr('current', 'moyens');
-            
         }
     });
 })
