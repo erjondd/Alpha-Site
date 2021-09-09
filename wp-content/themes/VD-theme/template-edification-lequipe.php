@@ -54,10 +54,10 @@ Template Name: Edification L'equipe
                     </div>
                     <div class="all-slider-top-info">
                         <div class="lequipe-edification-dotts">
-                            <div class="dott dott1" dotname="alexandre"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
-                            <div class="dott dott2" dotname="hugo"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
-                            <div class="dott dott3" dotname="nadine"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
-                            <div class="dott dott4" dotname="alone"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
+                            <div class="dott dott1 active" dotname="alexandre"></div>
+                            <div class="dott dott2" dotname="hugo"></div>
+                            <div class="dott dott3" dotname="nadine"></div>
+                            <div class="dott dott4" dotname="alone"></div>
                         </div>
                         <div class="all-slider-top-info-tittle">Responsable</div>
                         <div class="Submain1 Picture"> <span class="alexandre">Secteur Génie Civil</span>
@@ -188,10 +188,10 @@ Template Name: Edification L'equipe
 
         </div>
         <div class="lequipe-edification-dotts-mobile">
-            <div class="dott dott1" dotname="alexandre"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
-            <div class="dott dott2" dotname="hugo"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
-            <div class="dott dott3" dotname="nadine"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
-            <div class="dott dott4" dotname="alexandre"><img src="<?= get_template_directory_uri() ?>/images/slider-lequipe-dott.svg" alt=""></div>
+            <div class="dott dott1" dotname="alexandre"></div>
+            <div class="dott dott2" dotname="hugo"></div>
+            <div class="dott dott3" dotname="nadine"></div>
+            <div class="dott dott4" dotname="alexandre"></div>
         </div>
     </div>
     <div class="all-slider-info-mobile">

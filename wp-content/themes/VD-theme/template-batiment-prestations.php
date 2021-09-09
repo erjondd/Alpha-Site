@@ -43,7 +43,7 @@ $batiment_prestations_subtittle_3_box_right_3 = get_field("batiment_prestations_
     </div>
     <div class="page-content">
         <?php if (!wp_is_mobile()) { ?>
-            <div class="prestations-info">
+            <div class="prestations-info-list">
             </div>
             <div class="prestations-all-boxes">
                 <div class="prestations-boxes-left">

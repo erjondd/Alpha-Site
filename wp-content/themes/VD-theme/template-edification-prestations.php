@@ -149,9 +149,22 @@ $edification_prestations_subtittle_3_video = get_field("edification_prestations_
             </div>
         <?php } ?>
         <div class="prestations-info prestations-info-mobile">
-            <img class="prestations-video-play-icon-mobile" src="<?= get_template_directory_uri() ?>/images/video-play.svg" alt="">
-            <span class="prestations-video-label-mobile"></span>
+        <span class="genie_civil">
+            <!-- <img class="prestations-video-play-icon-mobile" src="<?= get_template_directory_uri() ?>/images/video-play.svg" alt="">
+            <span class="prestations-video-label-mobile"></span> -->
             <video class="prestations-video prestations-video-mobile" src="<?= $edification_prestations_subtittle_1_video['url'] ?>"></video>
+        </span>
+        <span class="batiment">
+            <!-- <img class="prestations-video-play-icon-mobile" src="<?= get_template_directory_uri() ?>/images/video-play.svg" alt="">
+            <span class="prestations-video-label-mobile"></span> -->
+            <video class="prestations-video prestations-video-mobile" src="<?= $edification_prestations_subtittle_2_video['url'] ?>"></video>
+        </span>
+        <span class="artisans_macon">
+            <!-- <img class="prestations-video-play-icon-mobile" src="<?= get_template_directory_uri() ?>/images/video-play.svg" alt="">
+            <span class="prestations-video-label-mobile"></span> -->
+            <video class="prestations-video prestations-video-mobile" src="<?= $edification_prestations_subtittle_3_video['url'] ?>"></video>
+        </span>
+        
         </div>
         <div class="prestations-all-boxes-mobile">
 

@@ -112,8 +112,9 @@ if (!$has_page_banner) {
             <?php if (wp_is_mobile()) { ?>
 
                 <div class="menu-links-mobile">
+                <div class="menu-mobile-edification menu-open-white">Édifications s.a.</div>
                     <div class="menu-mobile-batiment menu-open-black">Bâtiment & conseil sarl</div>
-                    <div class="menu-mobile-edification menu-open-white">Édifications s.a.</div>
+
                 </div>
 
             <?php } ?>

@@ -54,7 +54,11 @@ a:hover {
   width: 100vw;
   height: 100vh;
 }
+.scroll-up-to-100{
+ 
+  display: none;
 
+}
 .menu-wrapper {
   &.menu-open {
     &.white {
@@ -550,6 +554,18 @@ a:hover {
 }
 
 /*prestation css*/
+.prestations-info-list{
+  position: relative;
+    height: 100%;
+    flex: 0 0 50%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: calc(2vh + 4vw);
+    cursor: pointer;
+}
 .prestations-info {
   position: relative;
   height: 100%;
@@ -851,7 +867,7 @@ a:hover {
   top: 0;
   position: absolute;
   height: 100%;
-  width: calc(0.5vh + 1vw);
+  width: calc(0.5vh + 2vw);
   padding: 2vh 0;
   display: flex;
   flex-direction: column;
@@ -864,19 +880,37 @@ a:hover {
   display: block;
   margin: 1vh 0 2vh;
 }
+.dott::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  transform: skew(-30deg) rotate(-30deg);
+  border: 2px solid transparent;
+  background-color: #8b8b8b;
+  transition:all 1s ease;
+}
 .dott {
-  opacity: 0.33;
   cursor: pointer;
   height: 100%;
   display: flex;
+  position: relative;
+  
   img {
     width: calc(1vh + 1vw);
     height: calc(1vh + 1vw);
     margin: auto;
   }
 }
-.dott:hover {
-  opacity: 1;
+.active:before{
+  background-color:white;
+
+}
+.dott:hover::before {
+  border: 2px solid #ddd;
+  transform: skew(-30deg ) rotate(-60deg);
 }
 .page-lequipe .page-header-background::after {
   background-image: url(../images/lequipe-edification.png);
