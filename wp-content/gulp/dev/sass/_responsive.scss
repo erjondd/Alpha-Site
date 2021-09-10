@@ -23,7 +23,7 @@
       font-size: 0;
     }
     .current-ref-open {
-      margin-top: 60px;
+      margin-top: 70px;
     }
   }
 
@@ -226,6 +226,7 @@
 
   .page {
     height: auto;
+    transition: all 0.5s linear;
   }
 
   //prestations-edification
@@ -353,6 +354,7 @@
     position: absolute;
     top: 0;
     right: 20px;
+    width: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -397,7 +399,7 @@
     padding: 40px;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    min-height: 60vh;
   }
   .content-slider-info-mobile {
     margin: 0;
@@ -512,13 +514,17 @@
   }
 
   .menu-content {
-    transition: all 1s;
+    transition: all 0.5s linear;
     opacity: 0;
     display: flex;
     pointer-events: none;
     z-index: -5;
   }
   .menu-open {
+    + .page{
+      opacity: 0;
+    }
+
     &.white {
       .menu-content {
         opacity: 1;
