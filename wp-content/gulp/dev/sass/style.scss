@@ -205,12 +205,12 @@ a:hover {
 
 .menu-icon-x {
   position: absolute;
-  top: 15px;
-  right: calc(10vw + 15px);
+  top: 45px;
+  right: calc(10vw + 45px);
   z-index: 99999;
   svg {
     width: calc(3vw + 4vh);
-    height: calc(3vw + 4vh);
+    height: calc(4vw + 4vh);
     cursor: pointer;
     transition: all 0.5s linear;
     &:hover {
@@ -270,7 +270,7 @@ a:hover {
   font-size: calc(5vh + 5vw);
   margin: 0;
   padding: 0;
-  line-height: 1.1;
+  line-height: 16vh;
 }
 
 // .page-header img {
@@ -282,12 +282,13 @@ a:hover {
 // }
 .page-header-content {
   height: 100%;
-  padding: 4vh 2vw 0;
+  padding: calc(4vh + 15px) 4vh 4vh calc(4vh + 15px);
   display: flex;
   align-items: center;
   position: relative;
   z-index: 1;
   font-family: "tuskergrotesk-semibold";
+
   img {
     height: 100%;
     margin: 0;
@@ -378,12 +379,10 @@ a:hover {
 .info-box.box3 {
   background: #b3b3b3;
   height: 25%;
-  color: #363636;
 }
 .info-box.box4 {
   background: #dbdbdb;
   height: 25%;
-  color: #808080;
 }
 .info-box {
   text-align: -webkit-center;
@@ -409,6 +408,9 @@ a:hover {
   flex-grow: 1;
   display: flex;
   align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: left;
 }
 
 /*Menu CSS */
@@ -430,7 +432,7 @@ a:hover {
   width: 100%;
   height: 100%;
   font-family: "tuskergrotesk-semibold";
-  padding: 4vh 10vw 4vh 2vw;
+  padding: 2vh 10vw 4vh 3.5vw;
 }
 .menu-links {
   position: absolute;
@@ -725,7 +727,8 @@ a:hover {
   display: flex;
   font-size: calc(1.1vh + 2.2vw);
   justify-content: center;
-  font-family: tuskergrotesk-semibold;
+  font-family: "tuskergrotesk-semibold";
+  text-transform: uppercase;
 }
 .page-prestations .page-header-background::after {
   // background-image: url(../images/prestations-pic.jpg);
@@ -776,6 +779,7 @@ a:hover {
   background-size: cover;
 }
 /* Contact CSS*/
+
 .page-contact-edification .page-header-background::after {
   background-image: url(../images/contact-edification.jpg);
   background-size: cover;
@@ -822,11 +826,15 @@ a:hover {
 .submain-tittle-contact-edification {
   font-family: "poppins-regular";
   font-size: calc(0.7vh + 1.4vh);
+  b {
+    font-family: "poppins-bold";
+  }
 }
 .main-tittle-contact-edification {
   padding-bottom: 3vh;
   font-size: 4vh;
   font-family: "tuskergrotesk-semibold";
+  text-transform: uppercase;
 }
 
 .contact-info-blackbox {
@@ -861,14 +869,14 @@ a:hover {
 
 /* Lequipe CSS */
 .lequipe-edification-dotts {
-  right: 2vw;
-  top: 0;
-  position: absolute;
-  height: 100%;
-  width: calc(0.5vh + 2vw);
-  padding: 2vh 0;
-  display: flex;
-  flex-direction: column;
+  right: 1.5vw;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: calc(.5vh + 2vw);
+    padding: 1vh 0vw 2vh;
+    display: flex;
+    flex-direction: column;
 }
 .Submain1.Picture::after {
   content: "";
@@ -998,7 +1006,7 @@ a:hover {
   font-size: calc(0.4vh + 0.6vw);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+ 
 }
 .lequipe-left-center-right-infos {
   display: flex;
@@ -1056,6 +1064,7 @@ a:hover {
 .white-homepage-bottom {
   height: 25%;
   transition: all 0.5s linear;
+  text-transform: uppercase;
   &:hover {
     color: #888;
   }
@@ -1063,6 +1072,7 @@ a:hover {
 .black-homepage-bottom {
   height: 25%;
   transition: all 0.5s linear;
+  text-transform: uppercase;
   &:hover {
     color: #888;
   }
@@ -1256,6 +1266,9 @@ a:hover {
 .in-edification-lequipe .formation b {
   padding-right: 0.3vw;
 }
+.edification-normal-text {
+  font-family: "poppins-regular";
+}
 span.bold-tittle-lequipe {
   padding-right: 0.3vw;
   font-family: "poppins-bold";
@@ -1403,5 +1416,17 @@ span.bold-tittle-lequipe {
       color: #888;
     }
   }
+}
+
+//ndryshimet
+.top-main-info {
+  height: 50%;
+}
+.bottom-secondary-main-info {
+  height: 50%;
+  margin-top: 4vh;
+}
+.Submain1.Picture {
+  font-family: "poppins-bold";
 }
 @import "_responsive.scss";

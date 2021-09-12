@@ -8,7 +8,7 @@ Template Name: Batiment L'equipe
 
 ?>
 
-<div class="page page-lequipe lequipe-alexandre" current="alexandre">
+<div class="page page-lequipe lequipe-black-one lequipe-alexandre" current="alexandre">
     <div class="page-header">
         <div class="page-header-background"></div>
         <div class="page-header-content">
@@ -22,10 +22,14 @@ Template Name: Batiment L'equipe
     <div class="page-content">
         <?php if (!wp_is_mobile()) { ?>
             <div class="lequipe-informations">
-                <div class="main-info">
-                    <div class="main-lequipe-tittleque">QUI SOMMES<br />NOUS?</div>
+                <div class="top-main-info">
+                    <div class="main-info">
+                        <div class="main-lequipe-tittleque">QUI SOMMES<br />NOUS?</div>
+                    </div>
                 </div>
-                <div class="seconday-main-info">
+
+                <div class="bottom-secondary-main-info">
+                    <div class="seconday-main-info">
                     <div class="seconday-main-info-left">Nous développons notre activité dans les secteurs
                         du gros œuvre principalement, et du second œuvre accessoirement.
 
@@ -35,6 +39,7 @@ Template Name: Batiment L'equipe
                     <div class="seconday-main-info-right">L’exécution de travaux de bâtiment et de génie civil est au cœur de notre action.
 
                         Notre expérience et nos compétences sont des atouts majeurs permettant une saine diversification des activités d’Alpha Edification SA.</div>
+                    </div>
                 </div>
             </div>
             <div class="lequipe-all-slider">
@@ -128,24 +133,24 @@ Template Name: Batiment L'equipe
                 <div class="Submain1 Picture"> Secteur Génie Civil
 
                 </div>
-                <div class="Submain1 ne en">Né en
+                <div class="Submain1 ne en"><span class="bold-tittle-lequipe">Né en</span>
                 <span class=" ne en"><b> 1963 à Genève, Suisse</b></span>
 
                 </div>
 
-                <div class="Submain1 nationalite">Nationalité:
+                <div class="Submain1 nationalite"><span class="bold-tittle-lequipe">Nationalité:</span>
                 <span class=" nationalite">Française</span>
                 </div>
 
-                <div class="Submain1 domicile">Domicile:
+                <div class="Submain1 domicile"><span class="bold-tittle-lequipe">Domicile:</span>
                 <span class=" domicile">Lancy</span>
                 </div>
 
-                <div class="Submain1 langue">Langue:
+                <div class="Submain1 langue"><span class="bold-tittle-lequipe">Langue:</span>
                 <span class=" langue">Français</span>
                 </div>
 
-                <div class="Submain1 formation">Formation:
+                <div class="Submain1 formation"><span class="bold-tittle-lequipe">Formation:</span>
                     <span class=" formation">Dessinateur et</span>
                 </div>
             </div>

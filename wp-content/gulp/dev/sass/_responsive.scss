@@ -4,6 +4,7 @@
   .white-homepage-bottom,
   .black-homepage-bottom {
     font-size: 26px;
+    text-transform: uppercase;
   }
 
   .menu-ref-open {
@@ -51,7 +52,9 @@
     margin: 200px 0 215px 0;
     padding: 0 40px;
   }
-
+  .menu-icon-x svg{
+    height:32px;
+  }
   .white-homepage-top {
     height: calc(100% - 100px);
   }
@@ -70,6 +73,7 @@
     font-size: 26px;
     font-family: "tuskergrotesk-semibold";
     height: 100px;
+    text-transform: uppercase;
   }
   .menu-icon-x {
     right: 30px;
@@ -97,14 +101,14 @@
     background-size: 290%;
   }
   .page-header-content {
-    padding: 30px;
+    padding: 22px;   // mdryshimi i komenteve
     display: flex;
     align-items: flex-end;
     font-family: "tuskergrotesk-semibold";
 
     h1 {
-      font-size: 38px;
-      line-height: 1.2;
+      font-size: 36px;
+      // line-height: 1.2;
     }
   }
 
@@ -191,7 +195,7 @@
   .menu-responsive-logo {
     display: block;
     position: absolute;
-    left: 30px;
+    left: 22px;  // ndryshimi i komenteve
     top: 30px;
     width: 55px;
     height: 55px;
@@ -292,8 +296,11 @@
   .prestations-all-boxes-mobile {
     color: #fff;
     display: block;
-    font-family: "poppins-regular";
+    font-family: "poppins-bold";
     font-size: 17px;
+  }
+  .edification-normal-text{
+    font-family:"poppins-regular";
   }
   .prestations-boxes-mobile {
     display: flex;
@@ -313,20 +320,21 @@
   }
   .prestations-box3-mobile {
     background: #b3b3b3;
-    color: #222;
+    
   }
   .prestations-box4-mobile {
     background: #d3d3d3;
-    color: #363636;
+    
   }
   .prestations-box5-mobile {
     background: #e5e5e5;
-    color: #808080;
+   
   }
   .prestations-box6-mobile {
     background: #000;
     font-family: "tuskergrotesk-semibold";
     font-size: 32px;
+    text-transform: uppercase;
 
     svg {
       height: 44px;
@@ -388,7 +396,7 @@
     padding: 50px;
   }
   .lequipe-slider-bottom-experience-mobile {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
   }
 
   //valuers
@@ -400,6 +408,7 @@
     align-items: center;
     justify-content: center;
     min-height: 60vh;
+    font-family: 'poppins-medium';
   }
   .content-slider-info-mobile {
     margin: 0;
@@ -422,11 +431,11 @@
   }
   .main-valuers-titleque-mobile {
     font-family: "tuskergrotesk-semibold";
-    font-size: 46px;
+    font-size: 60px;
     color: #000;
     line-height: 1.2;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    
   }
   .info-main-bold-mobile {
     font-family: "poppins-bold";
@@ -454,7 +463,7 @@
   }
   .main-lequipe-tittleque {
     font-family: "tuskergrotesk-semibold";
-    font-size: 46px;
+    font-size: 45px;
     color: #000;
     line-height: 1.2;
     text-transform: uppercase;
@@ -463,9 +472,7 @@
   }
 
   //contact
-  .contact-map-picture iframe {
-    height: 300px;
-  }
+  
   .page-contact-edification .page-content {
     display: flex;
     flex-direction: column-reverse;
@@ -480,7 +487,7 @@
     font-size: 12px;
   }
   .contact-edification-top {
-    font-size: 50px;
+    font-size: 60px;   // ndryshim i komenteve
   }
   .contact :not(.menu-open) .menu-responsive-logo {
     display: none;
@@ -551,14 +558,132 @@
   .menu-icon {
     z-index: 4;
   }
+  .menu-icon-x svg{
+    height:32px;
+  }
+  .menu>li.menu-item-has-children>a::after{
+    width: 32px;
+  }
+  .menu>li{
+    margin-bottom: -10px;
+  }
+  .menu{
+    padding: 15px 15px 220px 15px;
+  }
+  .contact-edification-bottom-left{
+    flex: 0 0 46%;
+  }
+  .info-box.box1,.info-box.box2,.info-box.box3,.info-box.box4,
+  .prestations-box1-mobile,.prestations-box2-mobile,.prestations-box3-mobile,
+  .prestations-box4-mobile,.prestations-box5-mobile,.prestations-box6-mobile{
+    height:128px;
+  }
+  .page-header {
+    position: relative;
+    height: 32vh;
+    overflow: hidden;
+    font-family: "tusker-semibold";
+    h1{
+      line-height: 1.1;
+    }
+  }
+  .contact-infos {
+    flex: 0 0 50%;
+    padding: 0vh 4vw 4vh 4vw;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+}
+.contact-edification-top {
+  padding-bottom: 0px;
+}
+.main-tittle-contact-edification {
+  padding-bottom: 0;
+}
+.contact-edification-top {
+  font-size: 55px;
+}
+.contact-edification-bottom-left {
+  margin-bottom: 0px;
+}
+.main-tittle-contact-edification {
+  font-size: 25px;
+}
+.page-contact-edification,
+.page-contact-batiment{
+  height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+.page-contact-edification .page-content,
+.page-contact-batiment .page-content{
+  height:68vh;
+}
+.contact .menu-icon svg,
+.contact .menu-icon svg  {
+  width: calc(4vw + 3vh);
+  height: calc(4vw + 3vh);
+  cursor: pointer;
+}
+.submain-tittle-contact-edification span{
+  font-size: 10px;
+}
+.page-prestations .page-header{
+  height: 45vh;
+  
+}
+.page-prestations .page-header-content{
+  padding: 2vh 2vh 1vh 2vh;
+}
+.page-prestations h1{
+  font-size: 53px;
+}
+.page-enterprise .page-header
+{
+  height:48vh;
+  h1{
+    line-height: 1.2;
+    font-size: 77px;
+    letter-spacing: 3px;
+  }
+}
+.page-lequipe .page-header
+{
+  font-size:50px;
+}
+
+.page-lequipe .page-header-content {
+  
+    height: 100%;
+    padding: calc(4vh + 15px) 2vh 0vh 2vh;  
+}
+.page-lequipe .page-header{
+  height:40vh;
+}
+.page-enterprise .page-header-content{
+  padding:4vw 2vh 0vh 2vh;
+}
+.page-lequipe .page-header-content h1 span{
+  display:none !important;
+}
+.page-lequipe .page-header-content{
+  padding: calc(4vh + 15px) 2vh 1vh 2vh;
+}
+.page-lequipe .page-header-content h1{
+  font-size:81px;
+}
+.lequipe-black-one .page-header-content h1{
+  font-size:46px;
+}
+.lequipe-black-one .page-header-content{
+  padding:calc(4vh + 15px) 1.5vh 1vh 2vh;
+}
 }
 @media only screen and (max-width: 525px) {
 }
 @media only screen and (max-width: 400px) {
-  .contact-edification-bottom {
-    flex-direction: column;
-  }
-  .contact-edification-bottom-left {
-    margin-bottom: 30px;
-  }
+  
+  
 }

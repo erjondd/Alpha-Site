@@ -27,19 +27,23 @@ Template Name: Edification L'equipe
     <?php if (!wp_is_mobile()) { ?>
         <div class="page-content">
             <div class="lequipe-informations">
-                <div class="main-info">
-                    <div class="main-lequipe-tittleque">QUI SOMMES<br />NOUS?</div>
+                <div class="top-main-info">
+                    <div class="main-info">
+                        <div class="main-lequipe-tittleque">QUI SOMMES<br />NOUS?</div>
+                    </div>
                 </div>
-                <div class="seconday-main-info">
-                    <div class="seconday-main-info-left">Nous développons notre activité dans les secteurs
+                <div class="bottom-secondary-main-info">
+                    <div class="seconday-main-info">
+                        <div class="seconday-main-info-left">Nous développons notre activité dans les secteurs
                         du gros œuvre principalement, et du second œuvre accessoirement.
 
                         L’exécution de travaux de bâtiment et de génie civil est au cœur de notre action.
 
                         Notre expérience et nos compétences sont des atouts.</div>
-                    <div class="seconday-main-info-right">L’exécution de travaux de bâtiment et de génie civil est au cœur de notre action.
+                        <div class="seconday-main-info-right">L’exécution de travaux de bâtiment et de génie civil est au cœur de notre action.
 
                         Notre expérience et nos compétences sont des atouts majeurs permettant une saine diversification des activités d’Alpha Edification SA.</div>
+                    </div>
                 </div>
             </div>
             <div class="lequipe-all-slider">

@@ -23,7 +23,7 @@ $right_email = get_field("right_email");
 
 
 <div class="page page-contact-edification ">
-    <div class="page-header">
+    <div class="page-header contact">
         <div class="page-header-background"></div>
         <div class="page-header-content">
 
@@ -43,14 +43,15 @@ $right_email = get_field("right_email");
                 <div class="contact-edification-bottom-left">
                     <div class="main-tittle-contact-edification"><?= $left_subtittle ?></div>
                     <div class="submain-tittle-contact-edification"><b><?= $left_name ?></b></br>
-                        <?= $left_phone_number ?><br />
-                        <?= $left_email ?></div>
+                        <span><?= $left_phone_number ?></span><br />
+                        <span><?= $left_email ?></span>
+                    </div>
                 </div>
                 <div class="contact-edification-bottom-right">
                     <div class="main-tittle-contact-edification"><?= $right_subtittle ?></div>
                     <div class="submain-tittle-contact-edification"><b><?= $right_name ?></b></br>
-                        <?= $right_phone_number ?><br />
-                        <?= $right_email ?></div>
+                        <span><?= $right_phone_number ?></span><br />
+                        <span><?= $right_email ?></span></div>
                 </div>
             </div>
         </div>
